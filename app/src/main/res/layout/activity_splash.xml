@@ -1,23 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.basic.SplashActivity"
-    android:background="@color/colorLightBlue">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#007AFF"
+    tools:context=".ui.base.SplashActivity">
 
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:background="@color/colorLightBlue"
-        android:id="@+id/imagesplashlogo"
-        android:layout_width="@dimen/default_image_size123"
-        android:layout_height="@dimen/default_image_size123"
-        android:src="@drawable/paperslogo"
+        android:id="@+id/logoImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/transpartimage"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/app_name"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gtu_npapers"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage"
+        app:layout_constraintBottom_toBottomOf="@+id/logoImage"
+        app:layout_constraintEnd_toEndOf="@+id/logoImage"
+        app:layout_constraintStart_toStartOf="@id/logoImage"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

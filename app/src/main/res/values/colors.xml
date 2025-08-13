@@ -5,5 +5,8 @@
     <color name="colorPrimary">#1976D2</color>
     <color name="colorPrimaryDark">#1565C0</color>
     <color name="colorAccent">#1976D2</color>
-    <color name="colorLightBlue">#42A5F5</color>
+    <color name="splash_blue">#0073F7</color>
+    <color name="act_onbodying">#DFF0FF</color>
+    <color name="nav_bar_color">#F8F9FA</color>
+
 </resources>

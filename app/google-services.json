@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "148632640932",
+    "project_id": "diploma-papers",
+    "storage_bucket": "diploma-papers.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148632640932:android:b5da521b8eb2b52a327531",
+        "android_client_info": {
+          "package_name": "mrkinfotech.priyanshu.diplomapaperss"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANbOVzU0QftIJMvOfTT25TSWujhv3-qNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
