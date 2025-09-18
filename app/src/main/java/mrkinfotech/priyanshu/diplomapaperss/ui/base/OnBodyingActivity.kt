@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import mrkinfotech.priyanshu.diplomapaperss.ui.Home.HomeMainActivity
 import mrkinfotech.priyanshu.diplomapaperss.databinding.ActivityOnBodyingBinding
 import mrkinfotech.priyanshu.diplomapaperss.ui.login.LoginActivity
+import mrkinfotech.priyanshu.diplomapaperss.ui.utils.PreferenceHelper
 
 class OnBodyingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnBodyingBinding
@@ -17,9 +18,11 @@ class OnBodyingActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.getStartedButton.setOnClickListener{
-           val intent = Intent(this , LoginActivity :: class.java)
+            PreferenceHelper.setUserOnboading(this,true)
+            val intent = Intent(this , LoginActivity :: class.java)
             startActivity(intent)
             finish()
+
         }
 
     }

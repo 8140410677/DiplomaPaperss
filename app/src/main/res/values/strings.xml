@@ -39,4 +39,16 @@
     <string name="downloads">Downloads</string>
     <string name="search">Search</string>
     <string name="home">Home</string>
+    <string name="gtu_departments">Gtu DepartMents</string>
+    <string name="semester">Semester</string>
+    <string name="semester_2">Semester 2</string>
+    <string name="semester_3">Semester 3</string>
+    <string name="semester_5">Semester 5</string>
+    <string name="semester_6">Semester 6</string>
+    <string name="semester_1">Semester 1</string>
+    <string name="Favorites">Favorites\n</string>
+    <string name="select_department">Select Department</string>
+    <string name="mechanical">Mechanical</string>
+    <string name="it">IT</string>
+    <string name="chemical">Chemical</string>
 </resources>

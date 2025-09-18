@@ -17,7 +17,7 @@ import mrkinfotech.priyanshu.diplomapaperss.ui.Home.HomeMainActivity
 
 class LoginFragment : Fragment() {
 
-    private lateinit var binding: FragmentLoginBinding
+    rivate lateinit var binding: FragmentLoginBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -46,9 +46,9 @@ class LoginFragment : Fragment() {
                         if (it.isSuccessful) {
                             Log.d(TAG, "signInWithEmail:success")
                             val user = auth.currentUser
-
-                            val intent =  Intent(requireContext(), HomeMainActivity::class.java)
+                            val intent = Intent(requireContext(), HomeMainActivity::class.java)
                             startActivity(intent)
+
                         } else {
                             Log.w(TAG, "signInWithEmail:failure", it.exception)
                             Toast.makeText(
@@ -66,7 +66,7 @@ class LoginFragment : Fragment() {
         }
 
         binding.loginEditForget.setOnClickListener {
-            findNavController().navigate(R.id.ForgetFragment)
+            findNavController().navigate(R.id.DeaprtFragment)
         }
     }
 }

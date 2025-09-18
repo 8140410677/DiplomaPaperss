@@ -6,6 +6,9 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import mrkinfotech.priyanshu.diplomapaperss.R
+import mrkinfotech.priyanshu.diplomapaperss.ui.Home.HomeMainActivity
+import mrkinfotech.priyanshu.diplomapaperss.ui.login.LoginActivity
+import mrkinfotech.priyanshu.diplomapaperss.ui.utils.PreferenceHelper
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,9 +17,17 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, OnBodyingActivity::class.java)
-            startActivity(intent)
-            finish()
+
+            if (PreferenceHelper.getonBoardshow(this)) {
+
+                if(PreferenceHelper.isUserLoggedIn(this)){
+                    startActivity(Intent(this, HomeMainActivity::class.java))
+                } else {
+                    startActivity(Intent(this, LoginActivity::class.java))
+                }
+            } else {
+                startActivity(Intent(this, OnBodyingActivity::class.java))
+            }
         }, 2500)
 
 

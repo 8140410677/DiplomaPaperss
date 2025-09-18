@@ -4,13 +4,17 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.google.android.material.snackbar.Snackbar
 import mrkinfotech.priyanshu.diplomapaperss.R
 import mrkinfotech.priyanshu.diplomapaperss.databinding.ActivityMainBinding
+import mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.DepartFragment
+import mrkinfotech.priyanshu.diplomapaperss.ui.login.LoginFragment
 
 class HomeMainActivity : AppCompatActivity() {
 
@@ -23,12 +27,39 @@ class HomeMainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setSupportActionBar(binding.toolbar)
 
-        val navController = findNavController(R.id.nav_host_fragment_home_content_main)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.nav_host_fragment_home_content_main, HomeFragment())
+                .commit()
+        }
+
+        binding.bottomNavigationView.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.home -> {
+                    loadFragment(HomeFragment())
+                    true
+                }
+                R.id.Search -> {
+                    loadFragment(DepartFragment())
+                    true
+                }
+                R.id.Proflie -> {
+                    loadFragment(LoginFragment())
+                    true
+                }
+                else -> false
+            }
+        }
+
+        val navHostFragment = supportFragmentManager
+            .findFragmentById(R.id.nav_host_fragment_home_content_main) as NavHostFragment
+        val navController = navHostFragment.navController
 
     }
+
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -47,5 +78,11 @@ class HomeMainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_home_content_main)
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
+    }
+
+    private fun loadFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.nav_host_fragment_home_content_main, fragment)
+            .commit()
     }
 }

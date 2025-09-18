@@ -17,8 +17,8 @@
         android:icon="@drawable/downloadd"/>
 
     <item
-        android:id="@+id/Notification"
-        android:title="@string/notification"
+        android:id="@+id/Favorites"
+        android:title="@string/Favorites"
         android:icon="@drawable/notification"/>
 
     <item
