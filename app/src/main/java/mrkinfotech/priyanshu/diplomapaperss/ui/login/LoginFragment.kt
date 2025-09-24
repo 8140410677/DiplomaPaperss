@@ -17,7 +17,7 @@ import mrkinfotech.priyanshu.diplomapaperss.ui.Home.HomeMainActivity
 
 class LoginFragment : Fragment() {
 
-    rivate lateinit var binding: FragmentLoginBinding
+    lateinit var binding: FragmentLoginBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -29,11 +29,6 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
-
-
-
 
         binding.loginGoButton.setOnClickListener {
             val userEmail = binding.loginEditEmail.text.toString()
