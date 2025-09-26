@@ -12,7 +12,8 @@ import mrkinfotech.priyanshu.diplomapaperss.ui.ModelClass.Department
 import mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.DepartFragment
 
 class DepartmentAdapter(
-private val departments: List<Department>
+    private val context: Context,
+    private val departments: List<Department>
 ) : RecyclerView.Adapter<DepartmentAdapter.DepartmentViewHolder>() {
 
     inner class DepartmentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
