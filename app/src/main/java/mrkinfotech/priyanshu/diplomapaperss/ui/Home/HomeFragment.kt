@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -23,7 +24,6 @@ class HomeFragment : Fragment() {
     ): View? {
         binding = FragmentFirstBinding.inflate(layoutInflater)
 
-
         userlist = ArrayList()
 
 
@@ -31,6 +31,8 @@ class HomeFragment : Fragment() {
         userlist.add(HomeData("Chemical Department", R.drawable.ic_chemical , R.drawable.bg_card_green))
         userlist.add(HomeData("Civil Department", R.drawable.ic_civil , R.drawable.bg_card_orange))
         userlist.add(HomeData("Mechenical Department", R.drawable.mechenicaleng , R.drawable.bg_card_gray))
+
+
 
 
         adapter = HomeAdapter(requireContext(), userlist)

@@ -174,7 +174,7 @@
         android:id="@+id/textview4sem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Semester 4"
+        android:text="@string/semester_4"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -238,6 +238,7 @@
         android:id="@+id/bookIcon6"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:importantForAccessibility="no"
         android:src="@drawable/sixsemester"
         android:layout_marginStart="25dp"
         app:layout_constraintEnd_toStartOf="@+id/textview6sem"
@@ -257,14 +258,5 @@
         app:layout_constraintStart_toStartOf="@+id/sixSemester"
         app:layout_constraintEnd_toEndOf="@+id/sixSemester"
         app:layout_constraintTop_toTopOf="@+id/sixSemester" />
-
-
-
-
-
-
-
-    
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

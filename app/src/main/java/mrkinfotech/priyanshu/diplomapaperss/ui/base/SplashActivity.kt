@@ -1,5 +1,6 @@
 package mrkinfotech.priyanshu.diplomapaperss.ui.base
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -10,6 +11,7 @@ import mrkinfotech.priyanshu.diplomapaperss.ui.Home.HomeMainActivity
 import mrkinfotech.priyanshu.diplomapaperss.ui.login.LoginActivity
 import mrkinfotech.priyanshu.diplomapaperss.ui.utils.PreferenceHelper
 
+@SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

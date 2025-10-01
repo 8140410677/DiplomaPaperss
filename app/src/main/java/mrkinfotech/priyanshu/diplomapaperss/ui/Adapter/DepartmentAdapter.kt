@@ -21,6 +21,7 @@ class DepartmentAdapter(
         val tvDeptName: TextView = itemView.findViewById(R.id.tvDeptName)
     }
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DepartmentViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_department, parent, false)

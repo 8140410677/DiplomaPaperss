@@ -12,7 +12,6 @@
     <string name="access_all_n_gtu_diploma_papers">Access All \n GTU Diploma Papers</string>
     <string name="get_all_previous_year_question_n_papers_in_one_place_fast_n_free_and_reliable">Get all previous year question\n papers in one place. Fast, \n free, and reliable</string>
     <string name="get_started">Get Started</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="login_to_continue_accessing_diploma_papers">Login to continue accessing \ndiploma papers.</string>
     <string name="forgot_password">Forgot Password?</string>
@@ -51,4 +50,8 @@
     <string name="mechanical">Mechanical</string>
     <string name="it">IT</string>
     <string name="chemical">Chemical</string>
+    <string name="gtu_department">GTU Department</string>
+    <string name="no_favorites_yet">No favorites yet</string>
+    <string name="semester_4">Semester 4</string>
+    <string name="todo">TODO</string>
 </resources>

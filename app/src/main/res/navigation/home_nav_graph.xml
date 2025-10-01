@@ -20,6 +20,11 @@
         android:name="mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.DepartFragment"
         tools:layout="@layout/fragment_deaprt"/>
 
+    <fragment
+        android:id="@+id/FaviouriteFragment"
+        android:name="mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.FaviouritFragment"
+        tools:layout="@layout/fragment_faviourit"/>
+
 
 
 

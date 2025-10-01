@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/gradient_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,31 +10,38 @@
 
     <TextView
         android:id="@+id/home"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
         android:text="@string/home"
-        android:textSize="35sp"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textStyle="bold"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
     <TextView
         android:id="@+id/tvDepartmentTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GTU Department"
-        android:textSize="20sp"
-        android:layout_marginTop="70dp"
-        android:textStyle="bold"
+        android:text="@string/gtu_department"
+        android:textSize="29sp"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/purple_700"
         android:layout_gravity="center_horizontal"
-        android:paddingBottom="8dp" />
+        android:paddingBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvDepartments"
+        app:layout_constraintTop_toBottomOf="@+id/tvDepartmentTitle"
         android:layout_width="match_parent"
         android:layout_height="330dp"
+        android:layout_marginTop="50dp"
         android:clipToPadding="false"
         android:paddingTop="8dp"
-        tools:listitem="@layout/item_department" />
+        tools:listitem="@layout/department_item" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

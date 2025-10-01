@@ -30,11 +30,17 @@ class DepartFragment : Fragment() {
             userlist.add(Department("Electrical Engineering" , R.drawable.ic_electrical))
             userlist.add(Department("Automobile Engineering", R.drawable.ic_automoblie))
             userlist.add(Department("Chemical Engineering" , R.drawable.ic_chemical))
+            userlist.add(Department("Computer Science & Engineering " , R.drawable.ic_chemical))
+            userlist.add(Department("Chemical Engineering" , R.drawable.ic_chemical))
+            userlist.add(Department("Chemical Engineering" , R.drawable.ic_chemical))
+            userlist.add(Department("Chemical Engineering" , R.drawable.ic_chemical))
+            userlist.add(Department("Chemical Engineering" , R.drawable.ic_chemical))
+
 
 
             val adapter = DepartmentAdapter(requireContext(), userlist)
-        binding.rvDepartments.layoutManager = GridLayoutManager(requireContext(), 2)
-        binding.rvDepartments.adapter = adapter
+        binding.rvDepartments?.layoutManager = GridLayoutManager(requireContext(), 2)
+        binding.rvDepartments?.adapter = adapter
 
         return binding.root
     }
