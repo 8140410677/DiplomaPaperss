@@ -10,6 +10,8 @@
     <color name="nav_bar_color">#F8F9FA</color>
     <color name="home_bg">#F8F9FA</color>
     <color name="bg_card_blue">#E6F0FF</color>
+    <color name="profile_bg">#E9F2FF</color>
+
 
     <color name="teal_200">#03DAC5</color>
 

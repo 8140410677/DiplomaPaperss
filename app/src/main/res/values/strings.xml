@@ -54,4 +54,19 @@
     <string name="no_favorites_yet">No favorites yet</string>
     <string name="semester_4">Semester 4</string>
     <string name="todo">TODO</string>
+    <string name="this_is_a_serch_fragment_a">This is a Serch Fragment a</string>
+    <string name="your_name">Your Name</string>
+    <string name="abcd1234_gmail_com">abcd1234@gmail.com</string>
+    <string name="edit_proflie">Edit Proflie</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="logout">Logout</string>
+    <string name="edit_profli">Edit Profile</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="change_photo">Change Photo</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="email_addres">Email Address</string>
+    <string name="save_change">SAVE CHANGES</string>
+    <string name="enter_a_email_address">Enter A Email Address</string>
+    <string name="please_a_enter_a_email_and_check_out_your_email_address">Please a Enter a Email And Check Out Your Email Address</string>
+    <string name="please_a_enter_a_email_to_change_password">Please a Enter A Email to Change Password</string>
 </resources>

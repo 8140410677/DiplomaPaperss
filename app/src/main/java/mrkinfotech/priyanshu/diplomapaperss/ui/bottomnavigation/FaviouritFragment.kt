@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import mrkinfotech.priyanshu.diplomapaperss.R
-import mrkinfotech.priyanshu.diplomapaperss.databinding.FragmentDeaprtBinding
 import mrkinfotech.priyanshu.diplomapaperss.databinding.FragmentFaviouritBinding
 
 

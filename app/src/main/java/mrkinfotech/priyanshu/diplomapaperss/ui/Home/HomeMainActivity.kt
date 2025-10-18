@@ -14,6 +14,8 @@ import com.google.android.material.snackbar.Snackbar
 import mrkinfotech.priyanshu.diplomapaperss.R
 import mrkinfotech.priyanshu.diplomapaperss.databinding.ActivityMainBinding
 import mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.DepartFragment
+import mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.FaviouritFragment
+import mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.ProflieFragment
 import mrkinfotech.priyanshu.diplomapaperss.ui.login.LoginFragment
 
 class HomeMainActivity : AppCompatActivity() {
@@ -46,7 +48,17 @@ class HomeMainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.Proflie -> {
-                    loadFragment(LoginFragment())
+                    loadFragment(ProflieFragment())
+                    true
+                }
+
+                R.id.Downloads -> {
+                    loadFragment(ProflieFragment())
+                    true
+                }
+
+                R.id.Favorites -> {
+                    loadFragment(FaviouritFragment())
                     true
                 }
                 else -> false
@@ -58,11 +70,7 @@ class HomeMainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
 
     }
-
-
-
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }

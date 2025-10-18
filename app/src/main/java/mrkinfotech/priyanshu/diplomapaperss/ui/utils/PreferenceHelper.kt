@@ -2,6 +2,7 @@ package mrkinfotech.priyanshu.diplomapaperss.ui.utils
 
 import android.content.Context
 import android.content.SharedPreferences
+import androidx.core.content.edit
 
 class PreferenceHelper {
     companion object {
@@ -9,13 +10,13 @@ class PreferenceHelper {
         private const val USER_EMAIL = "UserEmail"
         private const val USER_NAME = "UserName"
         private const val key_email = "key email"
-        private const val KEY_USER_AGE = "userAge"
-        private const val KEY_USER_GENDER = "userGender"
-        private const val KEY_PROFILE_IMAGE = "profileImage"
-        private const val USER_ID = "UserID"
-        private const val KEY_LAST_LATITUDE = "last_latitude"
-        private const val KEY_LAST_LONGITUDE = "last_longitude"
-        private const val KEY_LAST_ADDRESS = "last_address"
+//        private const val KEY_USER_AGE = "userAge"
+//        private const val KEY_USER_GENDER = "userGender"
+//        private const val KEY_PROFILE_IMAGE = "profileImage"
+//        private const val USER_ID = "UserID"
+//        private const val KEY_LAST_LATITUDE = "last_latitude"
+//        private const val KEY_LAST_LONGITUDE = "last_longitude"
+//        private const val KEY_LAST_ADDRESS = "last_address"
         private const val VERSION_NAME = "1"
         private const val User_Login = "true"
 
@@ -29,14 +30,14 @@ class PreferenceHelper {
 
 
         fun setUserEmail(context: Context, email: String?) {
-            getSharedPrefs(context).edit().putString(USER_EMAIL, email).commit()
+            getSharedPrefs(context).edit { putString(USER_EMAIL, email) }
         }
         fun getonBoardshow(context: Context): Boolean {
             return getSharedPrefs(context).getBoolean(key_email,false)
         }
 
         fun setonboardShow(context: Context, email: Boolean) {
-            getSharedPrefs(context).edit().putBoolean(key_email,email).commit()
+            getSharedPrefs(context).edit { putBoolean(key_email, email) }
         }
 
         fun isUserLoggedIn(context: Context): Boolean {
@@ -45,7 +46,7 @@ class PreferenceHelper {
         }
 
         fun setUserOnboading(context: Context, recoad: Boolean) {
-            getSharedPrefs(context).edit().putBoolean(User_Login, recoad).commit()
+            getSharedPrefs(context).edit { putBoolean(User_Login, recoad) }
         }
 
         fun getUserOnboading(context: Context): Boolean {

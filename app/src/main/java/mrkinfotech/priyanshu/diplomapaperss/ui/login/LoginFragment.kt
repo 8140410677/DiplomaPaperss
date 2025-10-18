@@ -20,16 +20,23 @@ class LoginFragment : Fragment() {
 
     lateinit var recyclerView: RecyclerView
     lateinit var binding: FragmentLoginBinding
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentLoginBinding.inflate(layoutInflater)
         return binding.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.loginEditForget.setOnClickListener {
+            findNavController().navigate(R.id.ForgetFragment)
+        }
 
         binding.loginGoButton.setOnClickListener {
             val userEmail = binding.loginEditEmail.text.toString()
@@ -60,9 +67,6 @@ class LoginFragment : Fragment() {
         binding.signupLink.setOnClickListener {
             findNavController().navigate(R.id.SignupFragment)
         }
-
-        binding.loginEditForget.setOnClickListener {
-            findNavController().navigate(R.id.DeaprtFragment)
-        }
     }
+
 }
