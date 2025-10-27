@@ -13,7 +13,9 @@ import mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.DepartFragment
 
 class DepartmentAdapter(
     private val context: Context,
-    private val departments: List<Department>
+    private val departments: List<Department>,
+    private val onItemClick: (Department) -> Unit
+
 ) : RecyclerView.Adapter<DepartmentAdapter.DepartmentViewHolder>() {
 
     inner class DepartmentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -32,6 +34,11 @@ class DepartmentAdapter(
         val department = departments[position]
         holder.imgDept.setImageResource(department.icon)
         holder.tvDeptName.text = department.name
+
+
+        holder.itemView.setOnClickListener {
+            onItemClick(department)
+        }
     }
 
     override fun getItemCount(): Int = departments.size

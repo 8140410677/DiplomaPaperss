@@ -43,10 +43,12 @@ class HomeMainActivity : AppCompatActivity() {
                     loadFragment(HomeFragment())
                     true
                 }
+
                 R.id.Search -> {
                     loadFragment(DepartFragment())
                     true
                 }
+
                 R.id.Proflie -> {
                     loadFragment(ProflieFragment())
                     true
@@ -61,6 +63,7 @@ class HomeMainActivity : AppCompatActivity() {
                     loadFragment(FaviouritFragment())
                     true
                 }
+
                 else -> false
             }
         }
@@ -70,6 +73,7 @@ class HomeMainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
 
     }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return true

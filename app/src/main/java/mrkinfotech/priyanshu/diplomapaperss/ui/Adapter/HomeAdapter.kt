@@ -14,7 +14,8 @@ class HomeAdapter(
 ) : RecyclerView.Adapter<HomeAdapter.UserHomeAdapterViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserHomeAdapterViewHolder {
-        val itembinding = DepartmentItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val itembinding =
+            DepartmentItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return UserHomeAdapterViewHolder(itembinding)
     }
 

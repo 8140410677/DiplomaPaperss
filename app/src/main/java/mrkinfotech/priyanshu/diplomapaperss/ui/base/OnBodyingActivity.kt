@@ -17,9 +17,9 @@ class OnBodyingActivity : AppCompatActivity() {
         val binding = ActivityOnBodyingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.getStartedButton.setOnClickListener{
-            PreferenceHelper.setUserOnboading(this,true)
-            val intent = Intent(this , LoginActivity :: class.java)
+        binding.getStartedButton.setOnClickListener {
+            PreferenceHelper.setUserOnboading(this, true)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
 

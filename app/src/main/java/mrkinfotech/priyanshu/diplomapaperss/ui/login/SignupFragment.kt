@@ -50,7 +50,7 @@ class SignupFragment : Fragment() {
                             Log.d(TAG, "createUserWithEmail:success")
                             val user = auth.currentUser
                             findNavController().navigate(R.id.LoginFragment)
-                            
+
                         } else {
                             Log.w(
                                 TAG,
@@ -64,16 +64,12 @@ class SignupFragment : Fragment() {
                             ).show()
                         }
                     }
+            } else {
+                CustomDiloag.customMessage(requireContext(), "Enter UserName And Password")
             }
-            else
-            {
-                CustomDiloag.customMessage(requireContext(),"Enter UserName And Password")
-            }
-
 
 
         }
-
 
 
     }

@@ -8,19 +8,18 @@
     <fragment
         android:id="@+id/LoginFragment"
         android:name="mrkinfotech.priyanshu.diplomapaperss.ui.login.LoginFragment"
-        tools:layout="@layout/fragment_login"/>
+        tools:layout="@layout/fragment_login" />
 
 
     <fragment
         android:id="@+id/SignupFragment"
         android:name="mrkinfotech.priyanshu.diplomapaperss.ui.login.SignupFragment"
-        tools:layout="@layout/fragment_signup"/>
+        tools:layout="@layout/fragment_signup" />
 
     <fragment
         android:id="@+id/ForgetFragment"
         android:name="mrkinfotech.priyanshu.diplomapaperss.ui.login.ForgetFragment"
-        tools:layout="@layout/fragment_forget"/>
-
+        tools:layout="@layout/fragment_forget" />
 
 
 </navigation>

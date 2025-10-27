@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:background="@color/white"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.Semester.Semester">
 
 
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="UselessLeaf" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -32,18 +32,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-   <LinearLayout
+    <LinearLayout
         android:id="@+id/firstsemester"
-        android:layout_marginTop="25dp"
         android:layout_width="350dp"
         android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="10dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/bg_semester1"
-        app:layout_constraintTop_toBottomOf="@+id/semester"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/semester" />
 
     <ImageView
         android:id="@+id/bookIcon1"
@@ -56,40 +56,40 @@
         app:layout_constraintTop_toTopOf="@+id/firstsemester" />
 
 
-   <TextView
-       android:id="@+id/textView3"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="@string/semester_1"
-       android:textAlignment="center"
-       android:textColor="@color/black"
-       android:textSize="20sp"
-       android:textStyle="bold"
-       app:layout_constraintBottom_toBottomOf="@+id/firstsemester"
-       app:layout_constraintEnd_toEndOf="@+id/firstsemester"
-       app:layout_constraintStart_toStartOf="@+id/firstsemester"
-       app:layout_constraintTop_toTopOf="@+id/firstsemester" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/semester_1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/firstsemester"
+        app:layout_constraintEnd_toEndOf="@+id/firstsemester"
+        app:layout_constraintStart_toStartOf="@+id/firstsemester"
+        app:layout_constraintTop_toTopOf="@+id/firstsemester" />
 
 
     <LinearLayout
         android:id="@+id/secondSemester"
-        android:layout_marginTop="20dp"
         android:layout_width="350dp"
         android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/bg_semester2"
-        app:layout_constraintTop_toBottomOf="@+id/firstsemester"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/firstsemester" />
 
     <ImageView
         android:id="@+id/bookIcon2"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:src="@drawable/secondsemester"
         android:layout_marginStart="25dp"
+        android:src="@drawable/secondsemester"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="@+id/secondSemester"
         app:layout_constraintTop_toTopOf="@+id/secondSemester" />
@@ -110,23 +110,23 @@
 
     <LinearLayout
         android:id="@+id/thirdSemester"
-        android:layout_marginTop="20dp"
         android:layout_width="350dp"
         android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/bg_semester3"
-        app:layout_constraintTop_toBottomOf="@+id/secondSemester"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/secondSemester" />
 
     <ImageView
         android:id="@+id/bookIcon3"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:src="@drawable/thirdsem"
         android:layout_marginStart="25dp"
+        android:src="@drawable/thirdsem"
         app:layout_constraintEnd_toStartOf="@+id/textview3sem"
         app:layout_constraintStart_toStartOf="@+id/thirdSemester"
         app:layout_constraintTop_toTopOf="@+id/thirdSemester" />
@@ -142,30 +142,30 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/thirdSemester"
-        app:layout_constraintStart_toStartOf="@+id/thirdSemester"
         app:layout_constraintEnd_toEndOf="@+id/thirdSemester"
+        app:layout_constraintStart_toStartOf="@+id/thirdSemester"
         app:layout_constraintTop_toTopOf="@+id/thirdSemester" />
 
     <LinearLayout
         android:id="@+id/fourthsemester"
-        android:layout_marginTop="20dp"
         android:layout_width="350dp"
         android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="10dp"
-
+        android:layout_marginTop="20dp"
         android:background="@drawable/bg_semester4"
-        app:layout_constraintTop_toBottomOf="@+id/thirdSemester"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/thirdSemester" />
 
     <ImageView
         android:id="@+id/bookIcon4"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:src="@drawable/fourthsem"
         android:layout_marginStart="25dp"
+        android:src="@drawable/fourthsem"
         app:layout_constraintEnd_toStartOf="@+id/textview4sem"
         app:layout_constraintStart_toStartOf="@+id/fourthsemester"
         app:layout_constraintTop_toTopOf="@+id/fourthsemester" />
@@ -180,29 +180,29 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/fourthsemester"
-        app:layout_constraintStart_toStartOf="@+id/fourthsemester"
         app:layout_constraintEnd_toEndOf="@+id/fourthsemester"
+        app:layout_constraintStart_toStartOf="@+id/fourthsemester"
         app:layout_constraintTop_toTopOf="@+id/fourthsemester" />
 
     <LinearLayout
         android:id="@+id/fifthSemester"
-        android:layout_marginTop="20dp"
         android:layout_width="350dp"
         android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/bg_semester5"
-        app:layout_constraintTop_toBottomOf="@+id/fourthsemester"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/fourthsemester" />
 
     <ImageView
         android:id="@+id/bookIcon5"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:src="@drawable/fifthsem"
         android:layout_marginStart="25dp"
+        android:src="@drawable/fifthsem"
         app:layout_constraintEnd_toStartOf="@+id/textview5sem"
         app:layout_constraintStart_toStartOf="@+id/fifthSemester"
         app:layout_constraintTop_toTopOf="@+id/fifthSemester" />
@@ -217,30 +217,30 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/fifthSemester"
-        app:layout_constraintStart_toStartOf="@+id/fifthSemester"
         app:layout_constraintEnd_toEndOf="@+id/fifthSemester"
+        app:layout_constraintStart_toStartOf="@+id/fifthSemester"
         app:layout_constraintTop_toTopOf="@+id/fifthSemester" />
 
     <LinearLayout
         android:id="@+id/sixSemester"
-        android:layout_marginTop="20dp"
         android:layout_width="350dp"
         android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/bg_semester6"
-        app:layout_constraintTop_toBottomOf="@+id/fifthSemester"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/fifthSemester" />
 
     <ImageView
         android:id="@+id/bookIcon6"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_marginStart="25dp"
         android:importantForAccessibility="no"
         android:src="@drawable/sixsemester"
-        android:layout_marginStart="25dp"
         app:layout_constraintEnd_toStartOf="@+id/textview6sem"
         app:layout_constraintStart_toStartOf="@+id/sixSemester"
         app:layout_constraintTop_toTopOf="@+id/sixSemester" />
@@ -255,8 +255,8 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/sixSemester"
-        app:layout_constraintStart_toStartOf="@+id/sixSemester"
         app:layout_constraintEnd_toEndOf="@+id/sixSemester"
+        app:layout_constraintStart_toStartOf="@+id/sixSemester"
         app:layout_constraintTop_toTopOf="@+id/sixSemester" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

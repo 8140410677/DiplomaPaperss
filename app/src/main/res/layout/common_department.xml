@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
+    android:backgroundTint="@color/white"
     app:cardCornerRadius="16dp"
-    app:cardElevation="6dp"
-    android:backgroundTint="@color/white">
+    app:cardElevation="6dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,8 +19,8 @@
             android:id="@+id/imageforHome"
             android:layout_width="64dp"
             android:layout_height="64dp"
-            android:src="@drawable/computereng"
-            android:contentDescription="icon" />
+            android:contentDescription="icon"
+            android:src="@drawable/computereng" />
 
         <TextView
             android:id="@+id/tvforhome"

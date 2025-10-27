@@ -77,7 +77,7 @@ class ForgetFragment : Fragment() {
                     binding.infoText.text =
                         "Check your email for the reset link. It may take a few minutes."
 
-                 binding.forgeteditText.text?.clear()
+                    binding.forgeteditText.text?.clear()
 
 
                 } else {

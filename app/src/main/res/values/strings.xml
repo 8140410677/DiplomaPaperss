@@ -6,6 +6,11 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+
+
+    <string name="webclient">148632640932–9tmcokc5sigdevbgu76p1jhm2k3p2eeu.apps.googleusercontent.com</string>
+
+
     <string name="diploma_npapers">Diploma\nPapers</string>
     <string name="applogo">AppLogo</string>
     <string name="gtu_npapers">GTU\nPapers</string>
@@ -69,4 +74,12 @@
     <string name="enter_a_email_address">Enter A Email Address</string>
     <string name="please_a_enter_a_email_and_check_out_your_email_address">Please a Enter a Email And Check Out Your Email Address</string>
     <string name="please_a_enter_a_email_to_change_password">Please a Enter A Email to Change Password</string>
+    <string name="signup_with_google">SignUp With Google</string>
+    <string name="summer_paper">Summer Paper</string>
+    <string name="winter_paper">Winter Paper</string>
+    <string name="subjects">Subjects</string>
+    <string name="open_menu">Open Menu</string>
+    <string name="sem">Semester 1</string>
+    <string name="winter_2022">Winter 2022</string>
+    <string name="download">Download</string>
 </resources>

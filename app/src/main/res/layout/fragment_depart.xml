@@ -5,16 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/gradient_background"
     tools:context=".ui.bottomnavigation.DepartFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/this_is_a_serch_fragment_a"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        android:textStyle="italic"/>
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/searchbutton"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Department..." />
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvDepartments"
@@ -22,5 +26,5 @@
         android:layout_height="match_parent"
         android:clipToPadding="false"
         android:padding="4dp"
-        tools:listitem="@layout/item_department"/>
+        tools:listitem="@layout/item_department" />
 </LinearLayout>

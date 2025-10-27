@@ -11,7 +11,7 @@ import mrkinfotech.priyanshu.diplomapaperss.databinding.FragmentFaviouritBinding
 
 class FaviouritFragment : Fragment() {
 
-    private lateinit var binding : FragmentFaviouritBinding
+    private lateinit var binding: FragmentFaviouritBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -22,10 +22,6 @@ class FaviouritFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
-
-
 
 
     }

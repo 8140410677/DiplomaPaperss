@@ -8,32 +8,27 @@
     <fragment
         android:id="@+id/HomeFragment"
         android:name="mrkinfotech.priyanshu.diplomapaperss.ui.Home.HomeFragment"
-        tools:layout="@layout/fragment_first"/>
+        tools:layout="@layout/fragment_first" />
 
     <fragment
         android:id="@+id/SecondFragment"
         android:name="mrkinfotech.priyanshu.diplomapaperss.ui.Home.SecondFragment"
-        tools:layout="@layout/fragment_second"/>
+        tools:layout="@layout/fragment_second" />
 
     <fragment
         android:id="@+id/DeaprtFragment"
         android:name="mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.DepartFragment"
-        tools:layout="@layout/fragment_depart"/>
+        tools:layout="@layout/fragment_depart" />
 
     <fragment
         android:id="@+id/FaviouriteFragment"
         android:name="mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.FaviouritFragment"
-        tools:layout="@layout/fragment_faviourit"/>
+        tools:layout="@layout/fragment_faviourit" />
 
     <fragment
         android:id="@+id/ProfileFragment"
         android:name="mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.ProflieFragment"
-        tools:layout="@layout/fragment_proflie"/>
-
-
-
-
-
+        tools:layout="@layout/fragment_proflie" />
 
 
 
