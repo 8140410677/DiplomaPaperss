@@ -12,7 +12,20 @@
           "package_name": "mrkinfotech.priyanshu.diplomapaperss"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "148632640932-32ii2gh177etupdf7nveo14t3mep7nll.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mrkinfotech.priyanshu.diplomapaperss",
+            "certificate_hash": "0e476bb7c88b0d46539d6a2a50a3ba6f2c64d313"
+          }
+        },
+        {
+          "client_id": "148632640932-9tmcokc5sigdevbgu76p1jhm2k3p2eeu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyANbOVzU0QftIJMvOfTT25TSWujhv3-qNY"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148632640932-9tmcokc5sigdevbgu76p1jhm2k3p2eeu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

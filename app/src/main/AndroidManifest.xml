@@ -7,54 +7,37 @@
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
 
-
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/appicon"
         android:label="Diploma Paper"
-        android:roundIcon="@drawable/common_button_rounded"
         android:supportsRtl="true"
         android:theme="@style/Theme.DiplomaPaperss"
-        tools:targetApi="31">
-        <activity
-            android:name=".ui.Semester.PDFViewerActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.Semester.PaperListActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.Semester.SubjectActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.Semester.PaperSelect"
-            android:exported="false" />
-        <activity
-            android:name=".ui.bottomnavigation.EditProflie"
-            android:exported="false" />
-        <activity
-            android:name=".ui.Semester.Semester"
-            android:exported="false" />
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.base.OnBodyingActivity"
-            android:exported="false" />
+        tools:targetApi="34"
+        tools:replace="android:allowBackup,android:icon,android:label,android:theme,android:appComponentFactory"
+        android:appComponentFactory="@string/app_name">
+
+        <activity android:name=".ui.Semester.PDFViewerActivity" />
+        <activity android:name=".ui.Semester.PaperListActivity" />
+        <activity android:name=".ui.Semester.SubjectActivity" />
+        <activity android:name=".ui.Semester.PaperSelect" />
+        <activity android:name=".ui.bottomnavigation.EditProflie" />
+        <activity android:name=".ui.Semester.Semester" />
+        <activity android:name=".ui.login.LoginActivity" />
+        <activity android:name=".ui.base.OnBodyingActivity" />
+
         <activity
             android:name=".ui.base.SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.DiplomaPaperss">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.Home.HomeMainActivity"
-            android:exported="false" />
+
+        <activity android:name=".ui.Home.HomeMainActivity" />
+
     </application>
 
 </manifest>

@@ -14,6 +14,7 @@ import com.google.android.material.snackbar.Snackbar
 import mrkinfotech.priyanshu.diplomapaperss.R
 import mrkinfotech.priyanshu.diplomapaperss.databinding.ActivityMainBinding
 import mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.DepartFragment
+import mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.DownloadsFragment
 import mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.FaviouritFragment
 import mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.ProflieFragment
 import mrkinfotech.priyanshu.diplomapaperss.ui.login.LoginFragment
@@ -55,7 +56,7 @@ class HomeMainActivity : AppCompatActivity() {
                 }
 
                 R.id.Downloads -> {
-                    loadFragment(ProflieFragment())
+                    loadFragment(DownloadsFragment())
                     true
                 }
 

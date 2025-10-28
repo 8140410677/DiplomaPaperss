@@ -10,7 +10,9 @@ import mrkinfotech.priyanshu.diplomapaperss.ui.ModelClass.HomeData
 
 class HomeAdapter(
     private val context: Context,
-    private val userlist: List<HomeData>
+    private val userlist: List<HomeData>,
+    private val onItemClick: (HomeData) -> Unit
+
 ) : RecyclerView.Adapter<HomeAdapter.UserHomeAdapterViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserHomeAdapterViewHolder {
@@ -26,6 +28,10 @@ class HomeAdapter(
         holder.binding.departmentIcon.setImageResource(user.icon)
 
         holder.binding.rootLayout.setBackgroundResource(user.bgcolor)
+
+        holder.binding.root.setOnClickListener {
+            onItemClick(user)
+        }
 
     }
 

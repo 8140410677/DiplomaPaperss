@@ -26,20 +26,25 @@ class PaperSelect : AppCompatActivity() {
         binding.tvSemester.text = semesterName
 
         binding.winter.setOnClickListener {
-            val intent = Intent(this, PaperListActivity::class.java)
-            intent.putExtra("SEMESTER_NAME", semesterName)
-            intent.putExtra("PAPER_TYPE", "Winter")
-            intent.putExtra("SUBJECT_NAME", intent.getStringExtra("SUBJECT_NAME"))
-            startActivity(intent)
+            val subjectName = intent.getStringExtra("SUBJECT_NAME")
+            val semesterName = intent.getStringExtra("SEMESTER_NAME")
+
+            val newIntent = Intent(this, PaperListActivity::class.java)
+            newIntent.putExtra("SEMESTER_NAME", semesterName)
+            newIntent.putExtra("PAPER_TYPE", "Winter")
+            newIntent.putExtra("SUBJECT_NAME", subjectName)
+            startActivity(newIntent)
         }
 
-
         binding.cardSummer.setOnClickListener {
-            val intent = Intent(this, PaperListActivity::class.java)
-            intent.putExtra("SEMESTER_NAME", semesterName)
-            intent.putExtra("PAPER_TYPE", "Winter")
-            intent.putExtra("SUBJECT_NAME", intent.getStringExtra("SUBJECT_NAME"))
-            startActivity(intent)
+            val subjectName = intent.getStringExtra("SUBJECT_NAME")
+            val semesterName = intent.getStringExtra("SEMESTER_NAME")
+
+            val newIntent = Intent(this, PaperListActivity::class.java)
+            newIntent.putExtra("SEMESTER_NAME", semesterName)
+            newIntent.putExtra("PAPER_TYPE", "Summer")
+            newIntent.putExtra("SUBJECT_NAME", subjectName)
+            startActivity(newIntent)
         }
 
     }

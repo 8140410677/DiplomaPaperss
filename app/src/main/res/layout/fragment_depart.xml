@@ -7,17 +7,11 @@
     android:orientation="vertical"
     tools:context=".ui.bottomnavigation.DepartFragment">
 
-    <SearchView
+    <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/searchbutton"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:iconifiedByDefault="false"
-        android:queryHint="Search Department..." />
+        android:queryHint="Search Department" />
 
 
     <androidx.recyclerview.widget.RecyclerView

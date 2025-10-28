@@ -46,66 +46,55 @@ class SubjectActivity : AppCompatActivity() {
                     listOf(
                         Subject("Mathematics I"),
                         Subject("Communication Skills in English"),
-                        Subject("Sports and Yoga"),
-                        Subject("Modern Physics"),
                         Subject("Computer Programming Fundamentals"),
-                        Subject("Computer Basics and Static Web Page Designing"),
-                        Subject("Basics of Electronics")
-                    )
+                        Subject("Environmental Sustainability"),
+
+                        )
                 )
 
                 "Semester 2" -> list.addAll(
                     listOf(
-                        Subject("Applied Chemistry"),
                         Subject("Applied Mathematics"),
-                        Subject("Environmental Sustainability"),
-                        Subject("Indian Constitution"),
-                        Subject("Electronics Workshop and Practice"),
-                        Subject("Scripting Language"),
-                        Subject("Contributor Personality Development"),
-                        Subject("Integrated Personality Development"),
-                        Subject("Essence of Indian Knowledge and Tradition")
+                        Subject("C Language"),
+                        Subject("Digital Electonices"),
+                        Subject("Physics"),
                     )
                 )
 
                 "Semester 3" -> list.addAll(
                     listOf(
-                        Subject("Data Structures"),
-                        Subject("Database Management System"),
+                        Subject("Data Structure"),
+                        Subject("DBMS"),
                         Subject("Operating System"),
-                        Subject("Digital Electronics"),
-                        Subject("Computer Hardware"),
-                        Subject("Data Communication and Networking")
+                        Subject("Microprocessor"),
                     )
                 )
 
+
                 "Semester 4" -> list.addAll(
                     listOf(
-                        Subject("Object Oriented Programming with Java"),
-                        Subject("Computer Organization and Architecture"),
-                        Subject("Software Engineering"),
+                        Subject("Computer Networks"),
+                        Subject("Computer Organization And Architecture"),
                         Subject("Advanced Database Management System"),
-                        Subject("Web Development")
+                        Subject(".NET")
                     )
                 )
 
                 "Semester 5" -> list.addAll(
                     listOf(
                         Subject("Mobile Application Development"),
-                        Subject("Machine Learning Fundamentals"),
-                        Subject("Advanced Java"),
-                        Subject("Python for Data Science"),
-                        Subject("Cloud Computing")
+                        Subject("Computer Maintenance And Trouble Shooting"),
+                        Subject("Java Programming"),
+
                     )
                 )
 
                 "Semester 6" -> list.addAll(
                     listOf(
-                        Subject("Blockchain Technology"),
-                        Subject("Cyber Security"),
-                        Subject("Artificial Intelligence"),
-                        Subject("Internet of Things"),
-                        Subject("Major Project")
+                        Subject("Advanced Web Technology"),
+                        Subject("AJAVA"),
+                        Subject("Mobile Computing And Application Development"),
+                        Subject("Networking Management And Administration"),
                     )
                 )
             }
@@ -117,14 +106,14 @@ class SubjectActivity : AppCompatActivity() {
                         Subject("Python Programming"),
                         Subject("Basic Chemistry"),
                         Subject("Communication Skills in English"),
-                        Subject("Information Technology Fundamentals")
+                        Subject("IT System")
                     )
                 )
 
                 "Semester 2" -> list.addAll(
                     listOf(
                         Subject("Physics"),
-                        Subject("Applied Mathematics II"),
+                        Subject("Applied Mathematics"),
                         Subject("Environmental Sustainability"),
                         Subject("Advanced Python Programming")
                     )
@@ -132,16 +121,16 @@ class SubjectActivity : AppCompatActivity() {
 
                 "Semester 3" -> list.addAll(
                     listOf(
-                        Subject("Data Structures with Python"),
+                        Subject("Data Structure"),
                         Subject("Software Development Fundamentals"),
-                        Subject("Database Management System"),
+                        Subject("DBMS"),
                         Subject("Operating System")
                     )
                 )
 
                 "Semester 4" -> list.addAll(
                     listOf(
-                        Subject("Object Oriented Programming with Java"),
+                        Subject("Java Programming"),
                         Subject("Digital Marketing"),
                         Subject("Machine Learning Basics"),
                         Subject("Integrated Personality Development Course")
@@ -150,7 +139,7 @@ class SubjectActivity : AppCompatActivity() {
 
                 "Semester 5" -> list.addAll(
                     listOf(
-                        Subject("Advanced Java"),
+                        Subject("AJAVA"),
                         Subject("AI and Machine Learning"),
                         Subject("Mobile Networking"),
                         Subject("Business and Startups")

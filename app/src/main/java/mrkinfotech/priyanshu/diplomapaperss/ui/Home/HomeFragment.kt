@@ -1,6 +1,7 @@
 package mrkinfotech.priyanshu.diplomapaperss.ui.Home
 
 import HomeAdapter
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import mrkinfotech.priyanshu.diplomapaperss.R
 import mrkinfotech.priyanshu.diplomapaperss.databinding.FragmentFirstBinding
 import mrkinfotech.priyanshu.diplomapaperss.ui.ModelClass.HomeData
+import mrkinfotech.priyanshu.diplomapaperss.ui.Semester.Semester
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentFirstBinding
@@ -37,7 +39,10 @@ class HomeFragment : Fragment() {
                 R.drawable.bg_card_gray
             )
         )
-        adapter = HomeAdapter(requireContext(), userlist)
+        adapter = HomeAdapter(requireContext(), userlist) { selectedItem ->
+            val intent = Intent(requireContext(), Semester::class.java)
+            startActivity(intent)
+        }
         binding.rvDepartments.layoutManager = GridLayoutManager(requireContext(), 2)
         binding.rvDepartments.adapter = adapter
         binding.rvDepartments.setHasFixedSize(true)

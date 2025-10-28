@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import mrkinfotech.priyanshu.diplomapaperss.R
@@ -12,19 +13,18 @@ import mrkinfotech.priyanshu.diplomapaperss.databinding.FragmentDepartBinding
 import mrkinfotech.priyanshu.diplomapaperss.ui.Adapter.DepartmentAdapter
 import mrkinfotech.priyanshu.diplomapaperss.ui.ModelClass.Department
 import mrkinfotech.priyanshu.diplomapaperss.ui.Semester.Semester
-import kotlin.jvm.java
 
 class DepartFragment : Fragment() {
     private lateinit var binding: FragmentDepartBinding
     private lateinit var adapter: DepartmentAdapter
     private lateinit var userlist: ArrayList<Department>
+    private lateinit var filteredList: ArrayList<Department>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentDepartBinding.inflate(layoutInflater)
-
 
         userlist = arrayListOf(
             Department("Computer Engineering", R.drawable.computereng),
@@ -49,16 +49,48 @@ class DepartFragment : Fragment() {
             Department("Petroleum Engineering", R.drawable.petroleum)
         )
 
+        filteredList = ArrayList(userlist)
 
-
-        adapter = DepartmentAdapter(requireContext(), userlist) { department ->
+        adapter = DepartmentAdapter(requireContext(), filteredList) { department ->
             val intent = Intent(requireContext(), Semester::class.java)
             intent.putExtra("DEPARTMENT_NAME", department.name)
             startActivity(intent)
         }
+
         binding.rvDepartments.layoutManager = GridLayoutManager(requireContext(), 2)
         binding.rvDepartments.adapter = adapter
 
+        setupSearchView()
+
         return binding.root
+    }
+
+    private fun setupSearchView() {
+        binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                filterList(query)
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                filterList(newText)
+                return true
+            }
+        })
+    }
+
+    private fun filterList(query: String?) {
+        filteredList.clear()
+        if (query.isNullOrEmpty()) {
+            filteredList.addAll(userlist)
+        } else {
+            val searchText = query.lowercase()
+            for (dept in userlist) {
+                if (dept.name.lowercase().contains(searchText)) {
+                    filteredList.add(dept)
+                }
+            }
+        }
+        adapter.notifyDataSetChanged()
     }
 }
