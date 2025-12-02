@@ -18,7 +18,7 @@
         android:layout_marginTop="60dp"
         android:text="@string/edit_proflie"
         android:textColor="@color/black"
-        android:textSize="30sp" />
+        android:textSize="25sp" />
 
     <ImageView
         android:id="@+id/ProflieeditPhoto"
@@ -48,16 +48,6 @@
         android:hint="@string/enter_full_name"
         android:inputType="textPersonName"
         android:padding="15dp" />
-
-    <EditText
-        android:id="@+id/Proflieeditemail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/edittext"
-        android:hint="@string/email_addres"
-        android:padding="12dp" />
-
     <Button
         android:id="@+id/editSave"
         android:layout_width="match_parent"

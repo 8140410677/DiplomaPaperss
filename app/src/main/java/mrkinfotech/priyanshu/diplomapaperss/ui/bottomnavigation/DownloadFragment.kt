@@ -17,7 +17,7 @@ import mrkinfotech.priyanshu.diplomapaperss.databinding.FragmentDownloadBinding
 import mrkinfotech.priyanshu.diplomapaperss.ui.Adapter.DownloadAdapter
 import mrkinfotech.priyanshu.diplomapaperss.ui.ModelClass.DownloadStore
 
-class DownloadsFragment : Fragment() {
+class DownloadFragment : Fragment() {
     private lateinit var binding: FragmentDownloadBinding
     private lateinit var adapter: DownloadAdapter
 

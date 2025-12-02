@@ -3,12 +3,12 @@
 
     <item
         android:id="@+id/nav_edit_profile"
-        android:title="Edit Profile"
+        android:title="@string/edit_profil"
         android:icon="@drawable/ic_edit" />
 
     <item
         android:id="@+id/nav_feedback"
-        android:title="Send Feedback"
+        android:title="@string/send_feedback"
         android:icon="@drawable/ic_feedback" />
 
     <item
@@ -18,7 +18,7 @@
 
     <item
         android:id="@+id/nav_settings"
-        android:title="Settings"
+        android:title="@string/settings"
         android:icon="@drawable/ic_settings" />
 
 </group>

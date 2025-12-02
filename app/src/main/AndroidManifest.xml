@@ -6,6 +6,10 @@
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
+    <uses-feature android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -13,16 +17,34 @@
         android:label="Diploma Paper"
         android:supportsRtl="true"
         android:theme="@style/Theme.DiplomaPaperss"
-        tools:targetApi="34"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         tools:replace="android:allowBackup,android:icon,android:label,android:theme,android:appComponentFactory"
-        android:appComponentFactory="@string/app_name">
+        tools:targetApi="34">
+
+        <activity
+            android:name=".ui.SemsterShow.SubjectShow"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.SemsterShow.SemesterAstivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5191799636352645~5804124508" />
+
+        <activity android:name=".ui.navigationDrawer.SettingsActivity"
+            android:exported="false" />
+
+        <activity android:name=".ui.navigationDrawer.FeedbackActivity"
+            android:exported="false" />
 
         <activity android:name=".ui.Semester.PDFViewerActivity" />
         <activity android:name=".ui.Semester.PaperListActivity" />
         <activity android:name=".ui.Semester.SubjectActivity" />
         <activity android:name=".ui.Semester.PaperSelect" />
         <activity android:name=".ui.bottomnavigation.EditProflie" />
-        <activity android:name=".ui.Semester.Semester" />
+        <activity android:name=".ui.Semester.SemesterActivity" />
         <activity android:name=".ui.login.LoginActivity" />
         <activity android:name=".ui.base.OnBodyingActivity" />
 

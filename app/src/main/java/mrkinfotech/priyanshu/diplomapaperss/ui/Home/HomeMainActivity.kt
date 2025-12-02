@@ -14,7 +14,7 @@ import com.google.android.material.snackbar.Snackbar
 import mrkinfotech.priyanshu.diplomapaperss.R
 import mrkinfotech.priyanshu.diplomapaperss.databinding.ActivityMainBinding
 import mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.DepartFragment
-import mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.DownloadsFragment
+import mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.DownloadFragment
 import mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.FaviouritFragment
 import mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.ProflieFragment
 import mrkinfotech.priyanshu.diplomapaperss.ui.login.LoginFragment
@@ -30,7 +30,6 @@ class HomeMainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
@@ -56,7 +55,7 @@ class HomeMainActivity : AppCompatActivity() {
                 }
 
                 R.id.Downloads -> {
-                    loadFragment(DownloadsFragment())
+                    loadFragment(DownloadFragment())
                     true
                 }
 

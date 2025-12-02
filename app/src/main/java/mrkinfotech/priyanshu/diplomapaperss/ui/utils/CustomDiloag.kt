@@ -10,6 +10,22 @@ object CustomDiloag {
         val me = Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
     }
 
+    fun confirom(
+        context: Context,
+        title: String,
+        message: String,
+        onYes: () -> Unit
+    ) {
+        val dialog = android.app.AlertDialog.Builder(context)
+            .setTitle(title)
+            .setMessage(message)
+            .setPositiveButton("Yes") { _, _ -> onYes() }
+            .setNegativeButton("No", null)
+            .create()
+        dialog.show()
+    }
+
+
 
 
 

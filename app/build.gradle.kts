@@ -56,7 +56,6 @@ android {
 }
 
 dependencies {
-    // Core AndroidX libraries
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.12.0")
@@ -67,10 +66,8 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
     implementation("androidx.credentials:credentials:1.3.0")
 
-    // Image loading (Glide)
     implementation("com.github.bumptech.glide:glide:4.16.0")
 
-    // Firebase + Google Auth
     implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-auth")
@@ -79,7 +76,12 @@ dependencies {
 
     implementation("com.github.mhiew:android-pdf-viewer:3.2.0-beta.1")
     implementation ("com.google.code.gson:gson:2.9.0")
-
+    implementation(libs.androidx.activity)
+    implementation ("com.google.firebase:firebase-database:21.0.0")
+    implementation ("com.google.firebase:firebase-storage")
+    implementation(libs.play.services.ads.api)
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
+    implementation ("com.google.android.gms:play-services-ads-api:24.7.0")
+
 }

@@ -5,7 +5,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.github.barteksc.pdfviewer.PDFView
 import mrkinfotech.priyanshu.diplomapaperss.R
-import java.io.IOException
 
 class PDFViewerActivity : AppCompatActivity() {
 
@@ -14,24 +13,22 @@ class PDFViewerActivity : AppCompatActivity() {
         setContentView(R.layout.activity_pdfviewer)
 
         val pdfView = findViewById<PDFView>(R.id.pdfView)
-        val pdfPath = intent.getStringExtra("PDF_PATH")
 
-        if (pdfPath != null) {
-            // Always load from inside assets folder
-            val correctPath = if (pdfPath.startsWith("paper/")) pdfPath else "paper/$pdfPath"
+        val pdfFile = intent.getStringExtra("PDF_PATH")
 
-            try {
-                pdfView.fromAsset(correctPath)
-                    .enableSwipe(true)
-                    .swipeHorizontal(false)
-                    .enableDoubletap(true)
-                    .load()
-            } catch (e: IOException) {
-                e.printStackTrace()
-                Toast.makeText(this, "Error loading PDF: $correctPath", Toast.LENGTH_LONG).show()
-            }
-        } else {
+        if (pdfFile.isNullOrEmpty()) {
             Toast.makeText(this, "PDF path missing!", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        try {
+            pdfView.fromAsset(pdfFile)
+                .enableSwipe(true)
+                .enableDoubletap(true)
+                .load()
+
+        } catch (e: Exception) {
+            Toast.makeText(this, "Error: PDF not found in Assets!", Toast.LENGTH_LONG).show()
         }
     }
 }

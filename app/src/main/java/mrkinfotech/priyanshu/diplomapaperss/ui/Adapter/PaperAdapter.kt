@@ -69,7 +69,7 @@ class PaperAdapter(
 
         } catch (e: Exception) {
             e.printStackTrace()
-            Toast.makeText(context, "Error: File not found in assets", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Error: File not found in Assets", Toast.LENGTH_SHORT).show()
         }
     }
 

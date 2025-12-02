@@ -10,10 +10,6 @@
         android:name="mrkinfotech.priyanshu.diplomapaperss.ui.Home.HomeFragment"
         tools:layout="@layout/fragment_first" />
 
-    <fragment
-        android:id="@+id/SecondFragment"
-        android:name="mrkinfotech.priyanshu.diplomapaperss.ui.Home.SecondFragment"
-        tools:layout="@layout/fragment_second" />
 
     <fragment
         android:id="@+id/DeaprtFragment"

@@ -2,16 +2,14 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import mrkinfotech.priyanshu.diplomapaperss.databinding.DepartmentItemBinding
-import mrkinfotech.priyanshu.diplomapaperss.databinding.ItemDepartmentBinding
-import mrkinfotech.priyanshu.diplomapaperss.ui.Home.HomeFragment
 import mrkinfotech.priyanshu.diplomapaperss.ui.ModelClass.HomeData
 
 class HomeAdapter(
     private val context: Context,
     private val userlist: List<HomeData>,
     private val onItemClick: (HomeData) -> Unit
+
 
 ) : RecyclerView.Adapter<HomeAdapter.UserHomeAdapterViewHolder>() {
 
@@ -29,7 +27,7 @@ class HomeAdapter(
 
         holder.binding.rootLayout.setBackgroundResource(user.bgcolor)
 
-        holder.binding.root.setOnClickListener {
+        holder.itemView.setOnClickListener {
             onItemClick(user)
         }
 

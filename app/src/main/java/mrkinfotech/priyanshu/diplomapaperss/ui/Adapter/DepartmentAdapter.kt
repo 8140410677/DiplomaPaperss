@@ -9,7 +9,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import mrkinfotech.priyanshu.diplomapaperss.R
 import mrkinfotech.priyanshu.diplomapaperss.ui.ModelClass.Department
-import mrkinfotech.priyanshu.diplomapaperss.ui.bottomnavigation.DepartFragment
 
 class DepartmentAdapter(
     private val context: Context,
@@ -17,11 +16,6 @@ class DepartmentAdapter(
     private val onItemClick: (Department) -> Unit
 
 ) : RecyclerView.Adapter<DepartmentAdapter.DepartmentViewHolder>() {
-
-    inner class DepartmentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val imgDept: ImageView = itemView.findViewById(R.id.imgDept)
-        val tvDeptName: TextView = itemView.findViewById(R.id.tvDeptName)
-    }
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DepartmentViewHolder {
@@ -41,5 +35,11 @@ class DepartmentAdapter(
         }
     }
 
+
     override fun getItemCount(): Int = departments.size
+
+    inner class DepartmentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val imgDept: ImageView = itemView.findViewById(R.id.imgDept)
+        val tvDeptName: TextView = itemView.findViewById(R.id.tvDeptName)
+    }
 }

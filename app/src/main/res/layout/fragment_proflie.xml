@@ -4,85 +4,107 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.bottomnavigation.ProflieFragment">
+    tools:context=".ui.bottomnavigation.ProflieFragment"
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/white">
+        android:orientation="vertical">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:title="Profile"
+            app:titleTextColor="@android:color/white"
+            app:navigationIcon="@drawable/ic_menu" />
 
-
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center_horizontal"
-            android:padding="24dp"
-            android:background="@color/profile_bg">
+            android:fillViewport="true">
 
-            <ImageView
-                android:id="@+id/profileImage"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginBottom="20dp"
-                android:src="@drawable/ic_person"
-                android:background="@drawable/circle"
-                android:elevation="6dp" />
-
-            <TextView
-                android:id="@+id/ProflieName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Your Name"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/ProflieEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="abc@gmail.com"
-                android:textSize="16sp"/>
-
-            <Button
-                android:id="@+id/btnEditProfile"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:text="Edit Profile"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/colorPrimary"
-                android:padding="12dp"
-                android:elevation="4dp"/>
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="24dp"
+                android:background="@color/profile_bg">
 
-            <Button
-                android:id="@+id/btnOpenDrawer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Open Menu"
-                android:textColor="@color/black"
-                android:backgroundTint="@color/white"
-                android:padding="12dp"
-                android:elevation="2dp"/>
-        </LinearLayout>
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/ic_person"
+                    android:background="@drawable/circle"
+                    android:elevation="8dp"
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription" />
 
+                <TextView
+                    android:id="@+id/ProflieName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/your_ame"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/ProflieEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/example_gmail_com"
+                    android:textSize="15sp"
+                    android:textColor="@color/dark_gray" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEditProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/edit_profi"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    app:cornerRadius="16dp"
+                    android:paddingVertical="10dp"
+                    app:icon="@drawable/ic_edit"
+                    app:iconGravity="textStart"
+                    app:iconPadding="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLogout"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/logot"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:strokeColor="@color/colorPrimary"
+                    app:icon="@drawable/ic_logout"
+                    app:iconGravity="textStart"
+                    app:iconPadding="8dp" />
+
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
-    <!-- Navigation Drawer -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:fitsSystemWindows="true"
         android:background="@android:color/white"
         app:menu="@menu/profile_drawer_menu"
-        app:headerLayout="@layout/profile_drawer_header" />
+        app:headerLayout="@layout/profile_drawer_header"
+        android:elevation="8dp" />
+
 
 </androidx.drawerlayout.widget.DrawerLayout>

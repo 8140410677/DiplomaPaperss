@@ -1,6 +1,5 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
@@ -15,25 +14,29 @@
         android:id="@+id/rootLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:background="@drawable/bg_card_blue"
+        android:layout_margin="8dp">
 
         <ImageView
             android:id="@+id/departmentIcon"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginBottom="8dp"
-            android:src="@drawable/chemical"
-            app:tint="@color/black" />
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name" />
 
         <TextView
             android:id="@+id/departmentName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Computer Engineering"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="@string/department"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
+
     </LinearLayout>
+
 </com.google.android.material.card.MaterialCardView>

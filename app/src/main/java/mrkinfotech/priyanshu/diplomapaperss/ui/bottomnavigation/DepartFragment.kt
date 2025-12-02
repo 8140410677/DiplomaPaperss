@@ -12,7 +12,7 @@ import mrkinfotech.priyanshu.diplomapaperss.R
 import mrkinfotech.priyanshu.diplomapaperss.databinding.FragmentDepartBinding
 import mrkinfotech.priyanshu.diplomapaperss.ui.Adapter.DepartmentAdapter
 import mrkinfotech.priyanshu.diplomapaperss.ui.ModelClass.Department
-import mrkinfotech.priyanshu.diplomapaperss.ui.Semester.Semester
+import mrkinfotech.priyanshu.diplomapaperss.ui.Semester.SemesterActivity
 
 class DepartFragment : Fragment() {
     private lateinit var binding: FragmentDepartBinding
@@ -32,9 +32,9 @@ class DepartFragment : Fragment() {
             Department("Mechanical Engineering", R.drawable.mechenical),
             Department("Civil Engineering", R.drawable.civil),
             Department("Electrical Engineering", R.drawable.electrical),
+            Department("Chemical Engineering", R.drawable.chemical),
             Department("Electronics and Communication Engineering", R.drawable.ec),
             Department("Automobile Engineering", R.drawable.automoblie),
-            Department("Chemical Engineering", R.drawable.chemical),
             Department("Mechatronics Engineering", R.drawable.mechatronics),
             Department("Instrumentation and Control Engineering", R.drawable.instrumentation),
             Department("Plastic Engineering", R.drawable.plastic),
@@ -52,7 +52,7 @@ class DepartFragment : Fragment() {
         filteredList = ArrayList(userlist)
 
         adapter = DepartmentAdapter(requireContext(), filteredList) { department ->
-            val intent = Intent(requireContext(), Semester::class.java)
+            val intent = Intent(requireContext(), SemesterActivity::class.java)
             intent.putExtra("DEPARTMENT_NAME", department.name)
             startActivity(intent)
         }

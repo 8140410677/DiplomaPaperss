@@ -42,7 +42,8 @@ class SubjectActivity : AppCompatActivity() {
         when (departmentName) {
 
             "Computer Engineering" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                //compleate
+                "semester1" -> list.addAll(
                     listOf(
                         Subject("Mathematics I"),
                         Subject("Communication Skills in English"),
@@ -52,7 +53,7 @@ class SubjectActivity : AppCompatActivity() {
                         )
                 )
 
-                "Semester 2" -> list.addAll(
+                "semester2" -> list.addAll(
                     listOf(
                         Subject("Applied Mathematics"),
                         Subject("C Language"),
@@ -61,7 +62,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 3" -> list.addAll(
+                "semester3" -> list.addAll(
                     listOf(
                         Subject("Data Structure"),
                         Subject("DBMS"),
@@ -71,7 +72,7 @@ class SubjectActivity : AppCompatActivity() {
                 )
 
 
-                "Semester 4" -> list.addAll(
+                "semester4" -> list.addAll(
                     listOf(
                         Subject("Computer Networks"),
                         Subject("Computer Organization And Architecture"),
@@ -80,16 +81,16 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 5" -> list.addAll(
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("Mobile Application Development"),
                         Subject("Computer Maintenance And Trouble Shooting"),
                         Subject("Java Programming"),
 
-                    )
+                        )
                 )
 
-                "Semester 6" -> list.addAll(
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Advanced Web Technology"),
                         Subject("AJAVA"),
@@ -100,17 +101,18 @@ class SubjectActivity : AppCompatActivity() {
             }
 
             "Information Technology" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                //compleate IT
+                "semester1" -> list.addAll(
                     listOf(
                         Subject("Mathematics I"),
                         Subject("Python Programming"),
-                        Subject("Basic Chemistry"),
+                        Subject("Engineering Chemistry"),
                         Subject("Communication Skills in English"),
                         Subject("IT System")
                     )
                 )
 
-                "Semester 2" -> list.addAll(
+                "semester2" -> list.addAll(
                     listOf(
                         Subject("Physics"),
                         Subject("Applied Mathematics"),
@@ -119,92 +121,91 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 3" -> list.addAll(
+                "semester3" -> list.addAll(
                     listOf(
+                        Subject("Java Programming"),
                         Subject("Data Structure"),
-                        Subject("Software Development Fundamentals"),
                         Subject("DBMS"),
+                        Subject("Digital Marketing"),
                         Subject("Operating System")
                     )
                 )
-
-                "Semester 4" -> list.addAll(
+                "semester4" -> list.addAll(
                     listOf(
                         Subject("Java Programming"),
                         Subject("Digital Marketing"),
-                        Subject("Machine Learning Basics"),
+                        Subject("Machine Learning"),
                         Subject("Integrated Personality Development Course")
                     )
                 )
 
-                "Semester 5" -> list.addAll(
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("AJAVA"),
                         Subject("AI and Machine Learning"),
-                        Subject("Mobile Networking"),
-                        Subject("Business and Startups")
+                        Subject("Mobile Computing and Networks"),
+                        Subject("Entrepreneurship and Start-Ups")
                     )
                 )
 
-                "Semester 6" -> list.addAll(
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Blockchain"),
                         Subject("Cyber Security"),
-                        Subject("Big Data Analytics")
                     )
                 )
             }
 
             "Electrical Engineering" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                "semester1" -> list.addAll(
                     listOf(
-                        Subject("Communication English I"),
-                        Subject("Engineering Physics I"),
-                        Subject("Engineering Chemistry I"),
-                        Subject("Engineering Graphics I"),
+                        Subject("Communication Skills in English"),
+                        Subject("Engineering Chemistry"),
                         Subject("Mathematics I"),
-                        Subject("Workshop Practice")
+                        Subject("D.C. Circuits"),
                     )
                 )
 
-                "Semester 2" -> list.addAll(
+                "semester2" -> list.addAll(
                     listOf(
-                        Subject("Communication English II"),
-                        Subject("Applied Mathematics II"),
-                        Subject("Engineering Physics II"),
-                        Subject("Engineering Chemistry II"),
-                        Subject("Engineering Graphics II")
-                    )
+                        Subject("Applied Mathematics"),
+                        Subject("Physics"),
+                        Subject("Environmental Sustainability"),
+                        Subject("Basic Engineering Drawing And Graphics"),
+                        Subject("A.C. Circuits"),
+
+                        )
                 )
 
-                "Semester 3" -> list.addAll(
+                "semester3" -> list.addAll(
                     listOf(
-                        Subject("Electrical Circuit Theory"),
-                        Subject("Electronic Devices and Circuits"),
-                        Subject("Electrical Machines I"),
-                        Subject("Computer Applications")
+                        Subject("DC Machines And Transformer"),
+                        Subject("Electrical Power Generation"),
+                        Subject("Electronics Components And Circuits"),
+                        Subject("Electrical Instrumentation")
                     )
                 )
 
-                "Semester 4" -> list.addAll(
+                "semester4" -> list.addAll(
                     listOf(
-                        Subject("Electrical Machines II"),
-                        Subject("Digital Electronics"),
-                        Subject("Measurements and Instruments"),
-                        Subject("Transducers and Signal Conditioners")
+                        Subject("Digital Electronics And Digital Instruments"),
+                        Subject("Polyphase Transformers And Rotating Ac Machines"),
+                        Subject("Transmission And Distribution Of Electrical Power"),
+                        Subject("Utilization Of Electrical Energy")
                     )
                 )
-
-                "Semester 5" -> list.addAll(
+// Baaki Chhe Sem 5 And 6
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("Power System I"),
+                        Subject("Engineering Economics"),
                         Subject("Special Electrical Machines"),
                         Subject("Microcontroller"),
                         Subject("Electrical Machine Controller")
                     )
                 )
 
-                "Semester 6" -> list.addAll(
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Power System II"),
                         Subject("Electrical Estimation and Auditing"),
@@ -214,104 +215,101 @@ class SubjectActivity : AppCompatActivity() {
             }
 
             "Mechanical Engineering" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                //compleate Mechenical
+                "semester1" -> list.addAll(
                     listOf(
-                        Subject("Mathematics"),
-                        Subject("Communication Skills"),
+                        Subject("Mathematics I"),
+                        Subject("Communication Skills in English"),
                         Subject("Engineering Drawing"),
-                        Subject("Workshop Practice"),
-                        Subject("Applied Physics"),
-                        Subject("Applied Chemistry"),
-                        Subject("Basic Electrical and Electronics Engineering")
+                        Subject("Physics"),
+                        Subject("Engineering Chemistry"),
                     )
                 )
 
-                "Semester 2" -> list.addAll(
+                "semester2" -> list.addAll(
                     listOf(
-                        Subject("Engineering Mathematics"),
                         Subject("Engineering Mechanics"),
                         Subject("Engineering Graphics"),
-                        Subject("Basic Civil Engineering"),
-                        Subject("Engineering Physics"),
-                        Subject("Engineering Chemistry"),
-                        Subject("Basic Computer Skills")
+                        Subject("Physics"),
+                        Subject("Environmental Sustainability"),
+                        Subject("Applied Mathematics"),
                     )
                 )
 
-                "Semester 3" -> list.addAll(
+                "semester3" -> list.addAll(
                     listOf(
-                        Subject("Applied Mathematics"),
                         Subject("Manufacturing Technology"),
+                        Subject("Human Resources"),
                         Subject("Strength of Materials"),
                         Subject("Fluid Mechanics and Machinery"),
                         Subject("Thermodynamics")
                     )
                 )
 
-                "Semester 4" -> list.addAll(
+                "semester4" -> list.addAll(
                     listOf(
-                        Subject("Heat Transfer"),
+                        Subject("manufacturing engineering"),
                         Subject("Metrology and Quality Control"),
-                        Subject("Industrial Management"),
-                        Subject("CAD/CAM"),
+                        Subject("plant maintenance and safety"),
+                        Subject("thermal engineering"),
                         Subject("Theory of Machines")
                     )
                 )
 
-                "Semester 5" -> list.addAll(
+                "semester5" -> list.addAll(
                     listOf(
-                        Subject("Mechatronics"),
-                        Subject("Automobile Engineering"),
-                        Subject("Power Plant Engineering"),
-                        Subject("Refrigeration and Air Conditioning"),
-                        Subject("Non-Conventional Energy Sources")
+                        Subject("self employment and enterpreneurship devlopment"),
+                        Subject("thermal engineering II"),
+                        Subject("design of machine elements"),
+                        Subject("estimating costing and endineering contracting"),
+                        Subject("industring Engineering"),
+                        Subject("MANUFACTURING ENGINEERING-III")
                     )
                 )
 
-                "Semester 6" -> list.addAll(
+                "semester6" -> list.addAll(
                     listOf(
-                        Subject("Design of Machine Elements"),
-                        Subject("Industrial Robotics"),
-                        Subject("Entrepreneurship Development"),
-                        Subject("Project Work")
+                        Subject("Industrial Management"),
+                        Subject("Fabrication Technology"),
+                        Subject("Computer Aided Manufacturing"),
+                        Subject("Manufacturing Systems"),
+                        Subject("Power Plant Engineering"),
+                        Subject("Thermal Systems And Energy Efficiency"),
                     )
                 )
             }
 
             "Civil Engineering" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                // not complete 456
+                "semester1" -> list.addAll(
                     listOf(
-                        Subject("Communication Skills I"),
-                        Subject("Applied Chemistry"),
-                        Subject("Applied Mechanics"),
-                        Subject("Applied Physics"),
-                        Subject("Applied Mathematics I"),
-                        Subject("Computer Application for Engineering"),
-                        Subject("Workshop Practice")
+                        Subject("Communication Skills in English"),
+                        Subject("Engineering Chemistry"),
+                        Subject("Physics"),
+                        Subject("Mathematics I"),
+                        Subject("Basic Engineering Drawing And Graphics")
                     )
                 )
 
-                "Semester 2" -> list.addAll(
+                "semester2" -> list.addAll(
                     listOf(
-                        Subject("Applied Mathematics II"),
+                        Subject("Applied Mathematics"),
                         Subject("Engineering Drawing"),
-                        Subject("Fundamentals of Electrical Engineering"),
-                        Subject("Communication Skills II"),
-                        Subject("Surveying I"),
-                        Subject("Mechanical Engineering Fundamentals")
+                        Subject("Engineering Mechanics"),
+                        Subject("Environmental Sustainability")
                     )
                 )
 
-                "Semester 3" -> list.addAll(
+                "semester3" -> list.addAll(
                     listOf(
-                        Subject("Surveying II"),
-                        Subject("Building Construction"),
+                        Subject("Construction Technology"),
+                        Subject("Building Materials "),
                         Subject("Hydraulics"),
                         Subject("Architectural Drafting and Design")
                     )
                 )
 
-                "Semester 4" -> list.addAll(
+                "semester4" -> list.addAll(
                     listOf(
                         Subject("Concrete Technology"),
                         Subject("Structure Theory"),
@@ -320,7 +318,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 5" -> list.addAll(
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("Surveying III"),
                         Subject("RCC Structure Design I"),
@@ -329,7 +327,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 6" -> list.addAll(
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Estimation and Costing"),
                         Subject("RCC Structure Design II"),
@@ -341,18 +339,18 @@ class SubjectActivity : AppCompatActivity() {
             }
 
             "Chemical Engineering" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                "semester1" -> list.addAll(
                     listOf(
                         Subject("Mathematics I"),
                         Subject("Communication Skills in English"),
                         Subject("Engineering Graphics"),
-                        Subject("Sports and Yoga"),
                         Subject("Plant Utilities"),
+                        Subject("Engineering Chemistry"),
                         Subject("Material Science and Technology")
                     )
                 )
 
-                "Semester 2" -> list.addAll(
+                "semester2" -> list.addAll(
                     listOf(
                         Subject("Applied Physics"),
                         Subject("Applied Mathematics II"),
@@ -362,7 +360,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 3" -> list.addAll(
+                "semester3" -> list.addAll(
                     listOf(
                         Subject("Basics of Process Instrumentation"),
                         Subject("Fluid Flow Operation"),
@@ -373,7 +371,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 4" -> list.addAll(
+                "semester4" -> list.addAll(
                     listOf(
                         Subject("Process Heat Transfer II"),
                         Subject("Mass Transfer I"),
@@ -383,7 +381,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 5" -> list.addAll(
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("Entrepreneurship and Startups"),
                         Subject("Mass Transfer II"),
@@ -393,7 +391,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 6" -> list.addAll(
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Chemical Reaction Engineering"),
                         Subject("Petroleum Refining"),
@@ -406,29 +404,28 @@ class SubjectActivity : AppCompatActivity() {
 
             "Automobile Engineering" -> when (semesterName) {
 
-                "Semester 1" -> list.addAll(
+                "semester1" -> list.addAll(
                     listOf(
-                        Subject("Applied Mathematics I"),
-                        Subject("Applied Physics I"),
-                        Subject("Applied Chemistry I"),
+                        Subject("Mathematics I"),
+                        Subject("Physics"),
+                        Subject("Engineering Chemistry"),
                         Subject("Engineering Graphics I"),
-                        Subject("Communication Skills I"),
+                        Subject("Communication Skills in English"),
                         Subject("Workshop Practice I")
                     )
                 )
 
-                "Semester 2" -> list.addAll(
+                "semester2" -> list.addAll(
                     listOf(
-                        Subject("Applied Mathematics II"),
+                        Subject("Applied Mathematics"),
                         Subject("Applied Physics II"),
                         Subject("Applied Chemistry II"),
                         Subject("Engineering Graphics II"),
                         Subject("Computer Fundamentals"),
-                        Subject("Workshop Practice II")
                     )
                 )
 
-                "Semester 3" -> list.addAll(
+                "semester3" -> list.addAll(
                     listOf(
                         Subject("Strength of Materials"),
                         Subject("Automobile Engines"),
@@ -439,7 +436,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 4" -> list.addAll(
+                "semester4" -> list.addAll(
                     listOf(
                         Subject("Theory of Machines"),
                         Subject("Automobile Electrical and Electronics Systems"),
@@ -449,7 +446,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 5" -> list.addAll(
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("Automobile Power Plants"),
                         Subject("Automobile Manufacturing Technology"),
@@ -459,7 +456,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 6" -> list.addAll(
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Vehicle Dynamics"),
                         Subject("Modern Vehicle Technology"),
@@ -471,31 +468,29 @@ class SubjectActivity : AppCompatActivity() {
             }
 
             "Mechatronics Engineering" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                "semester1" -> list.addAll(
                     listOf(
                         Subject("Applied Science"),
-                        Subject("Applied Mathematics I"),
+                        Subject("Mathematics I"),
                         Subject("Manufacturing Technology"),
                         Subject("Basics of Electrical and Electronics Engineering"),
                         Subject("Science Lab"),
                         Subject("Basic Electrical and Electronics Lab"),
-                        Subject("Basic Computer Skills Lab")
                     )
                 )
 
-                "Semester 2" -> list.addAll(
+                "semester2" -> list.addAll(
                     listOf(
-                        Subject("Applied Mathematics II"),
+                        Subject("Applied Mathematics"),
                         Subject("C Programming"),
                         Subject("Analogue Electronics"),
-                        Subject("English Communication"),
+                        Subject("Communication Skills in English"),
                         Subject("Analogue Electronics Lab"),
                         Subject("Machine Shop Practice"),
-                        Subject("C Programming Lab")
                     )
                 )
 
-                "Semester 3" -> list.addAll(
+                "semester3" -> list.addAll(
                     listOf(
                         Subject("Measurement System"),
                         Subject("Digital Electronics"),
@@ -507,7 +502,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 4" -> list.addAll(
+                "semester4" -> list.addAll(
                     listOf(
                         Subject("Microcontroller and Applications"),
                         Subject("CNC Machine Tool Technology"),
@@ -519,7 +514,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 5" -> list.addAll(
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("Control System"),
                         Subject("Microscale Mechanical System"),
@@ -531,7 +526,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 6" -> list.addAll(
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Industrial Robotics"),
                         Subject("Design of Mechatronics System"),
@@ -544,31 +539,30 @@ class SubjectActivity : AppCompatActivity() {
             }
 
             "Electronics and Communication Engineering" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                "semester1" -> list.addAll(
                     listOf(
-                        Subject("Applied Physics"),
-                        Subject("Applied Chemistry"),
-                        Subject("Applied Mathematics I"),
+                        Subject("Physics"),
+                        Subject("Engineering Chemistry"),
+                        Subject("Mathematics I"),
                         Subject("Basics of Electrical and Electronics Engineering"),
                         Subject("Science Lab"),
                         Subject("Basic Electrical and Electronics Lab"),
-                        Subject("Basic Computer Skills Lab")
                     )
                 )
 
-                "Semester 2" -> list.addAll(
+                "semester2" -> list.addAll(
                     listOf(
-                        Subject("Applied Mathematics II"),
+                        Subject("Applied Mathematics"),
                         Subject("C Programming"),
                         Subject("Analogue Electronics"),
-                        Subject("English Communication"),
+                        Subject("Communication Skills in English"),
                         Subject("Analogue Electronics Lab"),
                         Subject("Machine Shop Practice"),
                         Subject("C Programming Lab")
                     )
                 )
 
-                "Semester 3" -> list.addAll(
+                "semester3" -> list.addAll(
                     listOf(
                         Subject("Digital Electronics Fundamentals"),
                         Subject("Data Structures"),
@@ -579,7 +573,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 4" -> list.addAll(
+                "semester4" -> list.addAll(
                     listOf(
                         Subject("Advanced Object Oriented Programming"),
                         Subject("Introduction to Software Engineering"),
@@ -589,7 +583,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 5" -> list.addAll(
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("Control System"),
                         Subject("Microelectronics"),
@@ -599,7 +593,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 6" -> list.addAll(
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Industrial Electronics"),
                         Subject("Microwave Engineering"),
@@ -610,20 +604,20 @@ class SubjectActivity : AppCompatActivity() {
             }
 
             "Biomedical Engineering" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                "semester1" -> list.addAll(
                     listOf(
-                        Subject("Mathematics-I"),
+                        Subject("Mathematics I"),
                         Subject("Physics"),
-                        Subject("Chemistry"),
+                        Subject("Engineering Chemistry"),
                         Subject("Engineering Graphics"),
                         Subject("Communication Skills in English"),
                         Subject("Basic Electrical Engineering")
                     )
                 )
 
-                "Semester 2" -> list.addAll(
+                "semester2" -> list.addAll(
                     listOf(
-                        Subject("Mathematics-II"),
+                        Subject("Applied Mathematics"),
                         Subject("Biology for Engineers"),
                         Subject("Basic Electronics Engineering"),
                         Subject("Human Anatomy and Physiology"),
@@ -632,7 +626,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 3" -> list.addAll(
+                "semester3" -> list.addAll(
                     listOf(
                         Subject("Biomedical Instrumentation-I"),
                         Subject("Analog and Digital Electronics"),
@@ -643,7 +637,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 4" -> list.addAll(
+                "semester4" -> list.addAll(
                     listOf(
                         Subject("Biomedical Instrumentation-II"),
                         Subject("Microprocessor and Interfacing"),
@@ -654,7 +648,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 5" -> list.addAll(
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("Diagnostic and Therapeutic Equipment"),
                         Subject("Bio-signal Processing"),
@@ -664,7 +658,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 6" -> list.addAll(
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Advanced Biomedical Instrumentation"),
                         Subject("Embedded Systems in Biomedical"),
@@ -676,20 +670,19 @@ class SubjectActivity : AppCompatActivity() {
             }
 
             "Textile Manufacturing Technology" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                "semester1" -> list.addAll(
                     listOf(
-                        Subject("Applied Physics"),
-                        Subject("Applied Chemistry"),
-                        Subject("Mathematics-I"),
+                        Subject("Physics"),
+                        Subject("Engineering Chemistry"),
+                        Subject("Mathematics I"),
                         Subject("Engineering Graphics"),
                         Subject("Communication Skills in English"),
-                        Subject("Workshop Practice")
                     )
                 )
 
-                "Semester 2" -> list.addAll(
+                "semester2" -> list.addAll(
                     listOf(
-                        Subject("Applied Mathematics-II"),
+                        Subject("Applied Mathematics"),
                         Subject("Yarn Manufacturing Process-I"),
                         Subject("Fabric Manufacturing Process-I"),
                         Subject("Textile Fiber Science"),
@@ -697,7 +690,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 3" -> list.addAll(
+                "semester3" -> list.addAll(
                     listOf(
                         Subject("Yarn Manufacturing Process-II"),
                         Subject("Fabric Manufacturing Process-II"),
@@ -707,7 +700,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 4" -> list.addAll(
+                "semester4" -> list.addAll(
                     listOf(
                         Subject("Textile Testing-II"),
                         Subject("Textile Chemistry-II"),
@@ -717,7 +710,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 5" -> list.addAll(
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("Textile Management and Quality Control"),
                         Subject("Garment Manufacturing Technology"),
@@ -727,7 +720,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 6" -> list.addAll(
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Technical Textiles"),
                         Subject("Nonwoven and Smart Fabrics"),
@@ -739,12 +732,12 @@ class SubjectActivity : AppCompatActivity() {
             }
 
             "Plastic Engineering" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                "semester1" -> list.addAll(
                     listOf(
-                        Subject("Mathematics-I"),
+                        Subject("Mathematics I"),
                         Subject("Programming in C"),
-                        Subject("Chemistry / Physics"),
-                        Subject("English Communication Skill"),
+                        Subject("Engineering Chemistry"),
+                        Subject("Communication Skills in English"),
                         Subject("Basics of Electronics / Basic Electrical Engineering"),
                         Subject("Engineering Workshop / Engineering Drawing"),
                         Subject("Mechanics"),
@@ -752,11 +745,11 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 2" -> list.addAll(
+                "semester2" -> list.addAll(
                     listOf(
                         Subject("Mathematics-II"),
                         Subject("Data Structure Using C"),
-                        Subject("Chemistry / Physics"),
+                        Subject("Physics"),
                         Subject("Business Communication"),
                         Subject("Basics of Electronics / Basic Electrical Engineering"),
                         Subject("Engineering Workshop / Engineering Drawing"),
@@ -765,7 +758,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 3" -> list.addAll(
+                "semester3" -> list.addAll(
                     listOf(
                         Subject("Fluid Mechanics & Machines"),
                         Subject("Material Sciences"),
@@ -776,7 +769,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 4" -> list.addAll(
+                "semester4" -> list.addAll(
                     listOf(
                         Subject("Purely Applied Mathematics for Specific Branch of Engineering"),
                         Subject("Polymer Structure & Properties Relationship"),
@@ -788,7 +781,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 5" -> list.addAll(
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("Plastic Processing Technology"),
                         Subject("Plastic Testing Technique"),
@@ -799,7 +792,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 6" -> list.addAll(
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Advanced Plastics Processing Techniques"),
                         Subject("Mould Engineering"),
@@ -814,18 +807,18 @@ class SubjectActivity : AppCompatActivity() {
             }
 
             "Environmental Engineering" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                "semester1" -> list.addAll(
                     listOf(
-                        Subject("Applied Chemistry"),
-                        Subject("Applied Physics"),
-                        Subject("Mathematics-I"),
+                        Subject("Engineering Chemistry"),
+                        Subject("Physics"),
+                        Subject("Mathematics I"),
                         Subject("Engineering Graphics"),
                         Subject("Communication Skills in English"),
                         Subject("Computer Applications")
                     )
                 )
 
-                "Semester 2" -> list.addAll(
+                "semester2" -> list.addAll(
                     listOf(
                         Subject("Mathematics-II"),
                         Subject("Environmental Studies"),
@@ -836,7 +829,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 3" -> list.addAll(
+                "semester3" -> list.addAll(
                     listOf(
                         Subject("Environmental Microbiology"),
                         Subject("Water Supply Engineering"),
@@ -847,7 +840,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 4" -> list.addAll(
+                "semester4" -> list.addAll(
                     listOf(
                         Subject("Wastewater Engineering"),
                         Subject("Solid Waste Management"),
@@ -858,7 +851,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 5" -> list.addAll(
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("Industrial Waste Management"),
                         Subject("Water and Wastewater Treatment Plant Design"),
@@ -869,7 +862,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 6" -> list.addAll(
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Climate Change and Sustainable Development"),
                         Subject("Environmental Audit and Certification"),
@@ -881,20 +874,19 @@ class SubjectActivity : AppCompatActivity() {
             }
 
             "Mining Engineering" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                "semester1" -> list.addAll(
                     listOf(
-                        Subject("Applied Mathematics-I"),
-                        Subject("Applied Physics"),
-                        Subject("Applied Chemistry"),
+                        Subject("Mathematics I"),
+                        Subject("Physics"),
+                        Subject("Engineering Chemistry"),
                         Subject("Engineering Graphics"),
                         Subject("Communication Skills in English"),
-                        Subject("Workshop Practice")
                     )
                 )
 
-                "Semester 2" -> list.addAll(
+                "semester2" -> list.addAll(
                     listOf(
-                        Subject("Applied Mathematics-II"),
+                        Subject("Applied Mathematics"),
                         Subject("Computer Fundamentals"),
                         Subject("Engineering Mechanics"),
                         Subject("Basic Electrical and Electronics Engineering"),
@@ -903,7 +895,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 3" -> list.addAll(
+                "semester3" -> list.addAll(
                     listOf(
                         Subject("Geology and Mining Terminology"),
                         Subject("Mine Surveying-I"),
@@ -914,7 +906,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 4" -> list.addAll(
+                "semester4" -> list.addAll(
                     listOf(
                         Subject("Mine Surveying-II"),
                         Subject("Underground Mining Methods-II"),
@@ -925,7 +917,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 5" -> list.addAll(
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("Mine Legislation and Safety"),
                         Subject("Mining Practice"),
@@ -936,7 +928,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 6" -> list.addAll(
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Computer Applications in Mining"),
                         Subject("Surface Mining Equipment"),
@@ -949,19 +941,19 @@ class SubjectActivity : AppCompatActivity() {
             }
 
             "Petroleum Engineering" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                "semester1" -> list.addAll(
                     listOf(
-                        Subject("Applied Mathematics-I"),
-                        Subject("Applied Physics"),
-                        Subject("Applied Chemistry"),
+                        Subject("Mathematics I"),
+                        Subject("Physics"),
+                        Subject("Engineering Chemistry"),
                         Subject("Engineering Graphics"),
                         Subject("Communication Skills in English"),
-                        Subject("Workshop Practice")
                     )
                 )
-                "Semester 2" -> list.addAll(
+
+                "semester2" -> list.addAll(
                     listOf(
-                        Subject("Applied Mathematics-II"),
+                        Subject("Applied Mathematics"),
                         Subject("Computer Fundamentals"),
                         Subject("Engineering Mechanics"),
                         Subject("Environmental Science"),
@@ -969,7 +961,8 @@ class SubjectActivity : AppCompatActivity() {
                         Subject("Engineering Drawing")
                     )
                 )
-                "Semester 3" -> list.addAll(
+
+                "semester3" -> list.addAll(
                     listOf(
                         Subject("Drilling Engineering-I"),
                         Subject("Petroleum Geology"),
@@ -979,7 +972,8 @@ class SubjectActivity : AppCompatActivity() {
                         Subject("Petroleum Engineering Lab")
                     )
                 )
-                "Semester 4" -> list.addAll(
+
+                "semester4" -> list.addAll(
                     listOf(
                         Subject("Drilling Engineering-II"),
                         Subject("Reservoir Engineering-II"),
@@ -989,7 +983,8 @@ class SubjectActivity : AppCompatActivity() {
                         Subject("Mini Project / Seminar")
                     )
                 )
-                "Semester 5" -> list.addAll(
+
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("Petroleum Production Engineering-II"),
                         Subject("Enhanced Oil Recovery Techniques"),
@@ -998,7 +993,8 @@ class SubjectActivity : AppCompatActivity() {
                         Subject("Industrial Training / Project Work-I")
                     )
                 )
-                "Semester 6" -> list.addAll(
+
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Offshore Drilling and Production"),
                         Subject("Petroleum Economics and Management"),
@@ -1010,29 +1006,27 @@ class SubjectActivity : AppCompatActivity() {
             }
 
             "Metallurgical Engineering" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                "semester1" -> list.addAll(
                     listOf(
-                        Subject("Applied Physics"),
-                        Subject("Applied Chemistry"),
-                        Subject("Mathematics-I"),
+                        Subject("Physics"),
+                        Subject("Engineering Chemistry"),
+                        Subject("Mathematics I"),
                         Subject("Engineering Graphics"),
                         Subject("Communication Skills in English"),
                         Subject("Basic Electrical and Electronics Engineering")
                     )
                 )
 
-                "Semester 2" -> list.addAll(
+                "semester2" -> list.addAll(
                     listOf(
-                        Subject("Mathematics-II"),
-                        Subject("Environmental Studies"),
-                        Subject("Engineering Mechanics"),
-                        Subject("Basic Workshop Practice"),
+                        Subject("Applied Mathematics"),
+                        Subject("Engineering Chemistry"),
                         Subject("Engineering Drawing"),
                         Subject("Computer Fundamentals")
                     )
                 )
 
-                "Semester 3" -> list.addAll(
+                "semester3" -> list.addAll(
                     listOf(
                         Subject("Physical Metallurgy"),
                         Subject("Ferrous Metallurgy"),
@@ -1043,7 +1037,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 4" -> list.addAll(
+                "semester4" -> list.addAll(
                     listOf(
                         Subject("Mechanical Metallurgy"),
                         Subject("Foundry Technology"),
@@ -1054,7 +1048,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 5" -> list.addAll(
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("Extractive Metallurgy"),
                         Subject("Corrosion Engineering"),
@@ -1065,7 +1059,7 @@ class SubjectActivity : AppCompatActivity() {
                     )
                 )
 
-                "Semester 6" -> list.addAll(
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Quality Control and Inspection"),
                         Subject("Failure Analysis"),
@@ -1077,27 +1071,28 @@ class SubjectActivity : AppCompatActivity() {
             }
 
             "Power Electronics Engineering" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                "semester1" -> list.addAll(
                     listOf(
-                        Subject("Applied Physics"),
-                        Subject("Applied Chemistry"),
-                        Subject("Applied Mathematics I"),
+                        Subject("Physics"),
+                        Subject("Engineering Chemistry"),
+                        Subject("Mathematics I"),
                         Subject("Basic Electrical Engineering"),
                         Subject("Engineering Graphics"),
-                        Subject("Workshop Practice")
                     )
                 )
-                "Semester 2" -> list.addAll(
+
+                "semester2" -> list.addAll(
                     listOf(
-                        Subject("Applied Mathematics II"),
+                        Subject("Applied Mathematics"),
                         Subject("Electronic Devices and Circuits"),
                         Subject("Electrical Machines I"),
                         Subject("Computer Fundamentals"),
-                        Subject("English Communication Skills"),
+                        Subject("Communication Skills in English"),
                         Subject("Electronic Devices Lab")
                     )
                 )
-                "Semester 3" -> list.addAll(
+
+                "semester3" -> list.addAll(
                     listOf(
                         Subject("Digital Electronics"),
                         Subject("Electrical Machines II"),
@@ -1107,7 +1102,8 @@ class SubjectActivity : AppCompatActivity() {
                         Subject("Measurements Lab")
                     )
                 )
-                "Semester 4" -> list.addAll(
+
+                "semester4" -> list.addAll(
                     listOf(
                         Subject("Power Electronics Devices"),
                         Subject("Analog Communication"),
@@ -1117,7 +1113,8 @@ class SubjectActivity : AppCompatActivity() {
                         Subject("Power Electronics Lab")
                     )
                 )
-                "Semester 5" -> list.addAll(
+
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("Industrial Electronics"),
                         Subject("Power Electronics Circuits"),
@@ -1127,7 +1124,8 @@ class SubjectActivity : AppCompatActivity() {
                         Subject("PLC Lab")
                     )
                 )
-                "Semester 6" -> list.addAll(
+
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Advanced Power Electronics"),
                         Subject("Renewable Energy Systems"),
@@ -1139,16 +1137,18 @@ class SubjectActivity : AppCompatActivity() {
             }
 
             "Architecture Assistantship" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                "semester1" -> list.addAll(
                     listOf(
                         Subject("Architectural Design I"),
                         Subject("Building Materials I"),
                         Subject("Engineering Graphics I"),
+                        Subject("Communication Skills in English"),
+
                         Subject("Basic Design and Visual Arts"),
-                        Subject("Workshop Practice")
                     )
                 )
-                "Semester 2" -> list.addAll(
+
+                "semester2" -> list.addAll(
                     listOf(
                         Subject("Architectural Design II"),
                         Subject("Building Materials II"),
@@ -1158,7 +1158,8 @@ class SubjectActivity : AppCompatActivity() {
                         Subject("Surveying")
                     )
                 )
-                "Semester 3" -> list.addAll(
+
+                "semester3" -> list.addAll(
                     listOf(
                         Subject("Architectural Design III"),
                         Subject("Building Construction II"),
@@ -1168,7 +1169,8 @@ class SubjectActivity : AppCompatActivity() {
                         Subject("Interior Design")
                     )
                 )
-                "Semester 4" -> list.addAll(
+
+                "semester4" -> list.addAll(
                     listOf(
                         Subject("Architectural Design IV"),
                         Subject("Building Services"),
@@ -1178,7 +1180,8 @@ class SubjectActivity : AppCompatActivity() {
                         Subject("Model Making Workshop")
                     )
                 )
-                "Semester 5" -> list.addAll(
+
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("Architectural Design V"),
                         Subject("Building Construction III"),
@@ -1188,7 +1191,8 @@ class SubjectActivity : AppCompatActivity() {
                         Subject("Site Planning")
                     )
                 )
-                "Semester 6" -> list.addAll(
+
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Architectural Design VI"),
                         Subject("Specification Writing"),
@@ -1200,26 +1204,28 @@ class SubjectActivity : AppCompatActivity() {
             }
 
             "Printing Technology" -> when (semesterName) {
-                "Semester 1" -> list.addAll(
+                "semester1" -> list.addAll(
                     listOf(
-                        Subject("Applied Physics"),
-                        Subject("Applied Chemistry"),
-                        Subject("Applied Mathematics I"),
+                        Subject("Physics"),
+                        Subject("Engineering Chemistry"),
+                        Subject("Mathematics I"),
                         Subject("Engineering Graphics"),
                         Subject("Basic Computer Skills"),
-                        Subject("Workshop Practice")
-                    )
+                        Subject("Communication Skills in English"),
+
+                        )
                 )
-                "Semester 2" -> list.addAll(
+
+                "semester2" -> list.addAll(
                     listOf(
-                        Subject("Applied Mathematics II"),
+                        Subject("Applied Mathematics"),
                         Subject("Printing Processes"),
                         Subject("Paper and Ink Technology"),
-                        Subject("English Communication Skills"),
                         Subject("Printing Practice Lab I")
                     )
                 )
-                "Semester 3" -> list.addAll(
+
+                "semester3" -> list.addAll(
                     listOf(
                         Subject("Printing Machines I"),
                         Subject("Typography and Layout Design"),
@@ -1228,7 +1234,8 @@ class SubjectActivity : AppCompatActivity() {
                         Subject("Printing Practice Lab II")
                     )
                 )
-                "Semester 4" -> list.addAll(
+
+                "semester4" -> list.addAll(
                     listOf(
                         Subject("Printing Machines II"),
                         Subject("Screen and Digital Printing"),
@@ -1237,7 +1244,8 @@ class SubjectActivity : AppCompatActivity() {
                         Subject("Printing Practice Lab III")
                     )
                 )
-                "Semester 5" -> list.addAll(
+
+                "semester5" -> list.addAll(
                     listOf(
                         Subject("Packaging Technology"),
                         Subject("Quality Control in Printing"),
@@ -1246,7 +1254,8 @@ class SubjectActivity : AppCompatActivity() {
                         Subject("Industrial Training")
                     )
                 )
-                "Semester 6" -> list.addAll(
+
+                "semester6" -> list.addAll(
                     listOf(
                         Subject("Advanced Printing Techniques"),
                         Subject("Publication Design"),

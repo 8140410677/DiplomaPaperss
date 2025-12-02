@@ -2,14 +2,8 @@ package mrkinfotech.priyanshu.diplomapaperss.ui.Semester
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import mrkinfotech.priyanshu.diplomapaperss.R
-import mrkinfotech.priyanshu.diplomapaperss.databinding.ActivityMainBinding
 import mrkinfotech.priyanshu.diplomapaperss.databinding.ActivityPaperSelectBinding
-import mrkinfotech.priyanshu.diplomapaperss.ui.utils.CustomDiloag
 
 class PaperSelect : AppCompatActivity() {
 
@@ -29,22 +23,22 @@ class PaperSelect : AppCompatActivity() {
             val subjectName = intent.getStringExtra("SUBJECT_NAME")
             val semesterName = intent.getStringExtra("SEMESTER_NAME")
 
-            val newIntent = Intent(this, PaperListActivity::class.java)
-            newIntent.putExtra("SEMESTER_NAME", semesterName)
-            newIntent.putExtra("PAPER_TYPE", "Winter")
-            newIntent.putExtra("SUBJECT_NAME", subjectName)
-            startActivity(newIntent)
+            val winter = Intent(this, PaperListActivity::class.java)
+            winter.putExtra("SEMESTER_NAME", semesterName)
+            winter.putExtra("PAPER_TYPE", "Winter")
+            winter.putExtra("SUBJECT_NAME", subjectName)
+            startActivity(winter)
         }
 
         binding.cardSummer.setOnClickListener {
             val subjectName = intent.getStringExtra("SUBJECT_NAME")
             val semesterName = intent.getStringExtra("SEMESTER_NAME")
 
-            val newIntent = Intent(this, PaperListActivity::class.java)
-            newIntent.putExtra("SEMESTER_NAME", semesterName)
-            newIntent.putExtra("PAPER_TYPE", "Summer")
-            newIntent.putExtra("SUBJECT_NAME", subjectName)
-            startActivity(newIntent)
+            val summer = Intent(this, PaperListActivity::class.java)
+            summer.putExtra("SEMESTER_NAME", semesterName)
+            summer.putExtra("PAPER_TYPE", "Summer")
+            summer.putExtra("SUBJECT_NAME", subjectName)
+            startActivity(summer)
         }
 
     }

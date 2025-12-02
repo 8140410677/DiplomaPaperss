@@ -13,23 +13,24 @@ import mrkinfotech.priyanshu.diplomapaperss.ui.utils.PreferenceHelper
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_splash)
 
         Handler(Looper.getMainLooper()).postDelayed({
-
-            if (PreferenceHelper.getUserOnboading(this)) {
-
-                if (PreferenceHelper.isUserLoggedIn(this)) {
-                    startActivity(Intent(this, HomeMainActivity::class.java))
-                } else {
-                    startActivity(Intent(this, LoginActivity::class.java))
+            val intent = when {
+                !PreferenceHelper.getUserOnboading(this) -> {
+                    Intent(this, OnBodyingActivity::class.java)
                 }
-            } else {
-                startActivity(Intent(this, OnBodyingActivity::class.java))
+                PreferenceHelper.isUserLoggedIn(this) -> {
+                    Intent(this, HomeMainActivity::class.java)
+                }
+                else -> {
+                    Intent(this, LoginActivity::class.java)
+                }
             }
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+
+            startActivity(intent)
+            finish()
         }, 2500)
-
-
     }
 }
